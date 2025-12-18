@@ -1,0 +1,172 @@
+export const Facilities = () => {
+  return `
+    <section id="facilities" class="section facilities">
+      <div class="container">
+        <h2 class="section-title fade-up">当社の強み</h2>
+        
+        <!-- 50 Years History Section -->
+        <div class="facility-item fade-up">
+          <div class="facility-image-wrapper">
+            <img src="/strength-history.png" alt="横浜で50年以上の実績" />
+          </div>
+          <div class="facility-content">
+            <h3 class="facility-title">横浜で50年以上の実績</h3>
+            <p class="facility-desc">
+              昭和48年の創業以来、横浜エリアを中心に地域密着で歩んでまいりました。<br>
+              親子二代、三代にわたってご依頼いただくお客様も多く、地域の皆様との信頼関係こそが私たちの最大の財産です。<br>
+              土地の特性や気候風土を知り尽くしているからこそできる、長く安心して住み続けられる住まいづくりをご提案いたします。<br>
+              これからも「街の頼れる工務店」として、お客様の暮らしに寄り添い続けてまいります。
+            </p>
+          </div>
+        </div>
+
+        <!-- Awards Section -->
+        <div class="facility-item facility-reverse fade-up delay-200">
+          <div class="facility-image-wrapper">
+            <img src="/awards.jpg" alt="ホームプロ受賞多数" />
+          </div>
+          <div class="facility-content">
+            <h3 class="facility-title">ホームプロ受賞多数</h3>
+            <p class="facility-desc">
+              利用者数No.1のリフォーム会社紹介サイト「ホームプロ」において、数々の賞を受賞しております。<br>
+              これは、施工品質はもちろんのこと、お客様への対応や提案力、アフターフォローに至るまで、<br>
+              総合的に高い評価をいただいた証です。<br>
+              第三者機関による客観的な評価に加え、実際に施工されたお客様からの「ありがとう」の声を励みに、<br>
+              さらなる品質向上に努めてまいります。
+            </p>
+          </div>
+        </div>
+
+        <!-- Factory Section -->
+        <div class="facility-item fade-up delay-200">
+          <div class="facility-image-wrapper">
+            <img src="/自社工場/4CCA2A5E-B2BF-4AB0-899B-2A9FAA6B0949.jpg" alt="自社工場" />
+          </div>
+          <div class="facility-content">
+            <h3 class="facility-title">自社工場完備</h3>
+            <p class="facility-desc">
+              当社は自社工場を完備しており、熟練の職人が建具や家具をオーダーメイドで製作いたします。<br>
+              既製品にはない、お客様の住まいにぴったり合わせた一点ものの製作が可能です。<br>
+              また、急な加工や調整にも迅速に対応できる体制を整えており、施工精度の向上と工期の短縮にも貢献しています。<br>
+              「こんな家具が欲しい」「ここのサイズに合わせたい」といったご要望も、ぜひお聞かせください。
+            </p>
+          </div>
+        </div>
+
+        <!-- Meeting Room Section -->
+        <div class="facility-item facility-reverse fade-up delay-200">
+          <div class="facility-image-wrapper">
+            <img src="/商談部屋/8FD6A7C4-2850-4400-A6C7-5BF86762FC50.jpg" alt="商談スペース" />
+          </div>
+          <div class="facility-content">
+            <h3 class="facility-title">落ち着いた商談スペース</h3>
+            <p class="facility-desc">
+              お客様にリラックスしてご相談いただけるよう、広々としたこだわりの商談スペースをご用意しております。<br>
+              カタログや豊富なサンプルを実際にお手に取っていただきながら、ゆっくりと理想の住まいについてお話しいただけます。<br>
+              プライバシーにも配慮した空間で、他のお客様を気にすることなく、じっくりとお悩みやご要望をお聞かせください。<br>
+              美味しいコーヒーをご用意してお待ちしております。
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <style>
+      .facilities {
+        padding: var(--spacing-xl) 0;
+        background-color: var(--color-bg-white);
+      }
+
+      .facility-item {
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+        margin-bottom: 6rem;
+      }
+
+      .facility-item:last-child {
+        margin-bottom: 0;
+      }
+
+      .facility-reverse {
+        flex-direction: row-reverse;
+      }
+
+      .facility-image-wrapper {
+        flex: 1;
+        height: 400px;
+        overflow: hidden;
+        border-radius: 2px;
+        box-shadow: var(--shadow-md);
+      }
+
+      .facility-image-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s ease;
+      }
+
+      .facility-item:hover .facility-image-wrapper img {
+        transform: scale(1.05);
+      }
+
+      .facility-content {
+        flex: 1;
+      }
+
+      .facility-title {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+        font-weight: 500;
+        letter-spacing: 0.1em;
+        color: var(--color-text-primary);
+        position: relative;
+        padding-bottom: 1rem;
+      }
+      
+      .facility-title::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 60px;
+        height: 1px;
+        background-color: var(--color-accent);
+      }
+
+      .facility-desc {
+        font-size: 1rem;
+        color: var(--color-text-secondary);
+        line-height: 2.2;
+        text-align: justify;
+      }
+
+      @media (max-width: 900px) {
+        .facility-item {
+          flex-direction: column;
+          gap: 2rem;
+          margin-bottom: 4rem;
+        }
+
+        .facility-reverse {
+          flex-direction: column;
+        }
+
+        .facility-image-wrapper {
+          width: 100%;
+          height: 300px;
+        }
+        
+        .facility-title::after {
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        
+        .facility-title {
+          text-align: center;
+        }
+      }
+    </style>
+  `;
+}
