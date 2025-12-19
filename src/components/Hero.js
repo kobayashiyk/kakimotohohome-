@@ -1,6 +1,7 @@
 export const Hero = () => {
   return `
     <section class="hero">
+      <div class="hero-bg"></div>
       <div class="hero-overlay"></div>
         <div class="hero-text-wrapper fade-up delay-200">
           <h1 class="hero-title">
@@ -14,7 +15,11 @@ export const Hero = () => {
              <a href="#contact" class="btn-hero">お問い合わせ</a>
           </div>
         </div>
-
+        
+        <div class="scroll-down">
+          <span>Scroll</span>
+          <div class="arrow"></div>
+        </div>
     </section>
     <style>
       .hero {
@@ -24,9 +29,67 @@ export const Hero = () => {
         align-items: center;
         justify-content: center;
         overflow: hidden;
-        background-image: url('/hero-bg-stylish.png'); /* Keep existing image for now, but style changes */
+        /* Background moved to .hero-bg */
+      }
+      
+      .hero-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('/hero-bg-stylish.png');
         background-size: cover;
         background-position: center;
+        z-index: 0;
+        animation: kenBurns 20s ease-in-out infinite alternate;
+      }
+      
+      @keyframes kenBurns {
+        0% { transform: scale(1); }
+        100% { transform: scale(1.1); }
+      }
+
+      /* Scroll Indicator */
+      .scroll-down {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+        color: rgba(255, 255, 255, 0.8);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        font-family: var(--font-serif);
+        font-size: 0.9rem;
+        letter-spacing: 0.1em;
+        animation: fadeUp 1s ease 1s backwards;
+      }
+      
+      .scroll-down .arrow {
+        width: 1px;
+        height: 60px;
+        background-color: rgba(255, 255, 255, 0.5);
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .scroll-down .arrow::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        background-color: #fff;
+        animation: scrollLine 2s ease-in-out infinite;
+      }
+      
+      @keyframes scrollLine {
+        0% { transform: translateY(-100%); }
+        100% { transform: translateY(200%); }
       }
 
       .hero-text-wrapper {

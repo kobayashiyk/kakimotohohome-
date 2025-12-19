@@ -190,7 +190,20 @@ export const About = () => {
         }
 
         .achievements {
-          align-items: center;
+          align-items: flex-start; /* Align inner items to left */
+          width: fit-content; /* Shrink to content width */
+          margin: 0 auto; /* Center the container */
+          text-align: left; /* Ensure text inside is left-aligned */
+          border-top: 1px solid rgba(0,0,0,0.1); /* Ensure border stays */
+          padding-top: 2rem;
+        }
+
+        .achievement-item {
+            width: 100%; /* Ensure it spans the container's width */
+        }
+
+        .achievement-text {
+            text-align: left; /* Explicitly align text left */
         }
       }
     </style>
