@@ -23,7 +23,32 @@ export const CtaSection = () => {
       </section>
       <style>
         /* ... existing styles ... */
-        
+        .cta-content {
+          flex: 1;
+        }
+  
+        .cta-title {
+          font-family: var(--font-serif);
+          font-size: 1.8rem;
+          color: var(--color-text-primary);
+          margin-bottom: 2rem; /* Increased from 1.5rem */
+          line-height: 1.6;
+        }
+  
+        .cta-desc {
+          color: var(--color-text-secondary);
+          line-height: 2.0; /* Increased from 1.8 */
+          font-size: 1rem;
+          margin-bottom: 1rem; /* Added margin */
+        }
+  
+        .cta-actions {
+          display: flex;
+          flex-direction: column;
+          gap: 1.5rem; /* Increased from 1rem */
+          min-width: 300px;
+        }
+  
         .cta-btn {
           display: flex;
           align-items: center;
@@ -67,7 +92,7 @@ export const CtaSection = () => {
           .cta-container {
             flex-direction: column;
             text-align: center;
-            gap: 2rem;
+            gap: 3rem; /* Increased from 2rem */
           }
   
           .cta-actions {
