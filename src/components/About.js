@@ -20,7 +20,7 @@ export const About = () => {
               <br>
               素材一つひとつにこだわり、<br>
               光と影が織りなす表情を大切にする。<br>
-              それが、カキモトホームの流儀です。
+              それが、柿本ホームの流儀です。
             </p>
             
             <div class="achievements">
