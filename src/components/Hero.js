@@ -11,9 +11,7 @@ export const Hero = () => {
           <p class="hero-subtitle">
             横浜で創業五十年。<br>あなたの人生に寄り添う家づくり。
           </p>
-          <div class="hero-cta-wrapper">
-             <!-- Contact button removed as requested -->
-          </div>
+          <!-- CTA Wrapper removed -->
         </div>
         
         <div class="scroll-down">
@@ -171,6 +169,21 @@ export const Hero = () => {
       }
 
       @media (max-width: 768px) {
+        .hero-text-wrapper {
+          width: 100%;
+          padding: 0 1.5rem;
+          margin: 0 auto;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .hero-title {
+            text-align: center;
+            width: 100%;
+            /* Balance letter spacing for true center */
+            text-indent: 0.15em;
+        }
+
         /* Make scroll indicator slightly higher on mobile to avoid bottom bar */
         .scroll-down {
             bottom: 50px; 
