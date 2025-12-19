@@ -11,11 +11,11 @@ export const CtaSection = () => {
           </div>
           <div class="cta-actions">
             <a href="tel:0120-654-711" class="cta-btn cta-btn-tel">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="cta-icon"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span class="cta-icon">📞</span>
               0120-654-711
             </a>
             <a href="/#contact" class="cta-btn cta-btn-mail">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="cta-icon"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span class="cta-icon">✉️</span>
               お問い合わせフォーム
             </a>
           </div>
@@ -28,20 +28,18 @@ export const CtaSection = () => {
           display: flex;
           align-items: center;
           justify-content: center;
-          padding: 1.2rem 2.5rem; /* Wider padding */
+          padding: 1.2rem 2rem;
           text-decoration: none;
-          font-family: var(--font-serif); /* Use serif for premium feel */
           font-weight: 500;
           font-size: 1.1rem;
-          border-radius: 2px; /* Sharper corners */
+          border-radius: 4px;
           transition: all 0.3s ease;
-          gap: 1rem;
-          letter-spacing: 0.1em;
+          gap: 0.8rem;
         }
   
         .cta-btn-tel {
           background-color: #fff;
-          border: 1px solid var(--color-text-primary); /* Thinner border */
+          border: 2px solid var(--color-text-primary);
           color: var(--color-text-primary);
         }
   
@@ -53,17 +51,16 @@ export const CtaSection = () => {
         .cta-btn-mail {
           background-color: var(--color-accent);
           color: #fff;
-          border: 1px solid var(--color-accent);
+          border: 2px solid var(--color-accent);
         }
   
         .cta-btn-mail:hover {
-          background-color: #fff;
-          color: var(--color-accent);
+          background-color: var(--color-accent-hover);
+          border-color: var(--color-accent-hover);
         }
   
         .cta-icon {
-          width: 20px;
-          height: 20px;
+          font-size: 1.3rem;
         }
   
         @media (max-width: 768px) {
