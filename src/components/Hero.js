@@ -1,13 +1,7 @@
 export const Hero = () => {
   return `
     <section class="hero">
-      <div class="hero-bg">
-        <video autoplay muted loop playsinline poster="/hero-bg-stylish.png">
-          <source src="/hero-movie.mp4" type="video/mp4">
-          <!-- Fallback for browsers that don't support video -->
-          <img src="/hero-bg-stylish.png" alt="Hero Background">
-        </video>
-      </div>
+      <div class="hero-bg"></div>
       <div class="hero-overlay"></div>
         <div class="hero-text-wrapper fade-up delay-200">
           <h1 class="hero-title">
@@ -53,23 +47,18 @@ export const Hero = () => {
         left: 0;
         width: 100%;
         height: 100%;
+        background-image: url('/hero-bg-stylish.png');
+        background-size: cover;
+        background-position: center;
         z-index: 0;
-        /* Animation removed as video provides movement, but we can keep subtle zoom if desire */
+        animation: kenBurns 20s ease-in-out infinite alternate;
+        will-change: transform;
       }
       
-      .hero-bg video {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+      @keyframes kenBurns {
+        0% { transform: scale(1); }
+        100% { transform: scale(1.1); }
       }
-
-      .hero-bg img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-      
-      /* @keyframes kenBurns removed */
 
       /* Scroll Indicator */
       .scroll-down {
