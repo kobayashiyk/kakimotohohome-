@@ -144,31 +144,48 @@ export const About = () => {
       @media (max-width: 768px) {
         .philosophy-layout {
           grid-template-columns: 1fr;
-          gap: 2rem;
+          gap: 0;
         }
 
         .philosophy-visual {
-          height: 300px;
+          height: auto;
+          display: flex;
+          flex-direction: column;
+        }
+        
+        .philosophy-image-container {
+            height: 300px;
         }
 
         .philosophy-title-overlay {
-          right: 0;
-          bottom: 0;
+          position: relative; /* layout normally */
+          right: auto;
+          bottom: auto;
           width: 100%;
           text-align: center;
-          background-color: rgba(255,255,255,0.9);
-          padding: 1.5rem;
+          background-color: var(--color-bg-white);
+          padding: 2rem 1rem;
+          box-shadow: none;
+          min-width: auto;
+          margin-top: -2rem; /* Slight overlap upwards */
+          z-index: 2;
         }
         
         .philosophy-title-overlay .section-title {
           text-align: center;
           font-size: 1.8rem;
+          margin-bottom: 0;
         }
 
         .philosophy-content {
           padding-left: 0;
           text-align: center;
-          padding-top: 2rem;
+          padding-top: 1rem;
+          padding: 1rem;
+        }
+        
+        .philosophy-content p {
+            text-align: justify;
         }
 
         .achievements {

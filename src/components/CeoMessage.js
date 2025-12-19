@@ -105,15 +105,27 @@ export const CeoMessage = () => {
       @media (max-width: 900px) {
         .ceo-content-wrapper {
           grid-template-columns: 1fr;
-          gap: 3rem;
+          gap: 2rem;
         }
 
         .ceo-image-container {
-          height: 400px;
+          height: 300px; /* Adjust height for mobile */
+          order: 1;
+        }
+        
+        .ceo-text-content {
+          order: 2;
+          padding: 0 1rem;
         }
         
         .ceo-heading {
-          font-size: 1.4rem;
+          font-size: 1.3rem;
+          margin-bottom: 1.5rem;
+        }
+        
+        .ceo-description {
+            font-size: 0.95rem;
+            margin-bottom: 2rem;
         }
       }
     </style>

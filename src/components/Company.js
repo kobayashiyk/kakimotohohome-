@@ -175,16 +175,24 @@ export const Company = () => {
         .history-item {
           flex-direction: column;
           gap: 0.5rem;
+          padding: 1rem 0;
         }
         
         .overview-item {
           grid-template-columns: 1fr;
           gap: 0.5rem;
+          padding: 1rem 0;
         }
 
         .overview-item dt {
           color: var(--color-accent);
           font-size: 0.9rem;
+          border-left: 3px solid var(--color-accent);
+          padding-left: 0.5rem;
+        }
+        
+        .subsection-title {
+            font-size: 1.2rem;
         }
       }
     </style>

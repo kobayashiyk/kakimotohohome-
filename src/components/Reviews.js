@@ -171,6 +171,21 @@ export const Reviews = () => {
         background-color: var(--color-text-primary);
         color: #fff;
       }
+      @media (max-width: 768px) {
+        .reviews-grid {
+          grid-template-columns: 1fr;
+          gap: 1.5rem;
+          margin-top: 2rem;
+        }
+        
+        .review-card {
+            padding: 1.5rem;
+        }
+        
+        .review-title {
+            font-size: 1rem;
+        }
+      }
     </style>
   `;
 };

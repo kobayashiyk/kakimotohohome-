@@ -4,10 +4,8 @@ export const Hero = () => {
       <div class="hero-overlay"></div>
       <div class="container hero-content">
         <div class="hero-text-wrapper">
-          <h1 class="hero-title text-vertical fade-up delay-200" aria-label="時を重ね、想いを紡ぐ。">
-            <span class="d-block" aria-hidden="true">時を</span>
-            <span class="d-block" aria-hidden="true">重ね、</span>
-            <span class="d-block" aria-hidden="true">想いを</span>
+          <h1 class="hero-title text-vertical fade-up delay-200" aria-label="想いを、紡ぐ。">
+            <span class="d-block" aria-hidden="true">想いを、</span>
             <span class="d-block" aria-hidden="true">紡ぐ。</span>
           </h1>
           <p class="hero-subtitle text-vertical fade-up delay-400">
@@ -98,17 +96,46 @@ export const Hero = () => {
 
       @media (max-width: 768px) {
         .hero-text-wrapper {
-          gap: 2rem;
+          flex-direction: column; /* Stack vertically */
+          gap: 1.5rem;
+          margin-bottom: 2rem;
+          height: auto;
+          writing-mode: horizontal-tb; /* Horizontal text */
+        }
+        
+        .hero-title.text-vertical,
+        .hero-subtitle.text-vertical {
+            writing-mode: horizontal-tb;
+            height: auto;
+            text-orientation: mixed;
         }
         
         .hero-title {
-          font-size: 2.5rem;
-          height: 300px;
+          font-size: 1.8rem;
+          height: auto;
+          line-height: 1.4;
+          letter-spacing: 0.1em;
+          text-align: center;
+          width: 100%;
+        }
+        
+        .hero-title span {
+            display: inline-block; /* Inline block for horizontal flow */
+            margin: 0 0.2em;
         }
         
         .hero-subtitle {
           font-size: 1rem;
-          height: 200px;
+          height: auto;
+          margin-top: 1rem;
+          padding-top: 0;
+          text-align: center;
+          line-height: 1.8;
+          writing-mode: horizontal-tb;
+        }
+        
+        .hero-cta-wrapper {
+            margin-top: 2rem;
         }
       }
     </style>

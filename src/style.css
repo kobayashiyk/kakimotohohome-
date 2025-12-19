@@ -121,18 +121,33 @@ img {
 /* Mobile Typography & Spacing */
 @media (max-width: 768px) {
   :root {
+    --spacing-xs: 0.8rem;
+    --spacing-sm: 1.5rem;
     --spacing-md: 3rem;
-    --spacing-lg: 5rem;
-    --spacing-xl: 8rem;
+    --spacing-lg: 4rem;
+    --spacing-xl: 6rem;
+  }
+
+  body {
+    font-size: 14px;
   }
 
   .section-title {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin-bottom: var(--spacing-md);
+    letter-spacing: 0.1em;
   }
 
   .container {
-    padding: 0 1.5rem;
+    padding: 0 1.25rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    word-break: break-word;
+    /* Prevent overflow */
   }
 }
 
