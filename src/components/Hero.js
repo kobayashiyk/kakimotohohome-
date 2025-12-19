@@ -1,7 +1,13 @@
 export const Hero = () => {
   return `
     <section class="hero">
-      <div class="hero-bg"></div>
+      <div class="hero-bg">
+        <video autoplay muted loop playsinline poster="/hero-bg-stylish.png">
+          <source src="/hero-movie.mp4" type="video/mp4">
+          <!-- Fallback for browsers that don't support video -->
+          <img src="/hero-bg-stylish.png" alt="Hero Background">
+        </video>
+      </div>
       <div class="hero-overlay"></div>
         <div class="hero-text-wrapper fade-up delay-200">
           <h1 class="hero-title">
@@ -12,7 +18,16 @@ export const Hero = () => {
             横浜で創業五十年。<br>あなたの人生に寄り添う家づくり。
           </p>
           <div class="hero-cta-wrapper">
-             <a href="#contact" class="btn-hero">お問い合わせ</a>
+             <div class="cta-actions">
+                <a href="tel:0120-654-711" class="btn-hero btn-hero-tel">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hero-icon"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                  0120-654-711
+                </a>
+                <a href="#contact" class="btn-hero btn-hero-mail">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hero-icon"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  お問い合わせ
+                </a>
+             </div>
           </div>
         </div>
         
@@ -38,17 +53,23 @@ export const Hero = () => {
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: url('/hero-bg-stylish.png');
-        background-size: cover;
-        background-position: center;
         z-index: 0;
-        animation: kenBurns 20s ease-in-out infinite alternate;
+        /* Animation removed as video provides movement, but we can keep subtle zoom if desire */
       }
       
-      @keyframes kenBurns {
-        0% { transform: scale(1); }
-        100% { transform: scale(1.1); }
+      .hero-bg video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
       }
+
+      .hero-bg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+      /* @keyframes kenBurns removed */
 
       /* Scroll Indicator */
       .scroll-down {
