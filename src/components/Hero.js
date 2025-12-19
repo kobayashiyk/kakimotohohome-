@@ -177,11 +177,19 @@ export const Hero = () => {
       }
 
       @media (max-width: 768px) {
-        /* Add floating animation to text wrapper on mobile - REMOVED */
-        
         /* Make scroll indicator slightly higher on mobile to avoid bottom bar */
         .scroll-down {
             bottom: 50px; 
+        }
+
+        /* Soften the CTA button on mobile */
+        .btn-hero {
+            padding: 0.8rem 2.5rem;
+            font-size: 1rem;
+            background-color: rgba(0, 0, 0, 0.2); /* More transparent */
+            border-color: rgba(255, 255, 255, 0.6);
+            width: 80%; /* Limit width */
+            max-width: 280px;
         }
       }
     </style>
