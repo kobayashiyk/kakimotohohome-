@@ -163,22 +163,28 @@ export const Hero = () => {
         box-shadow: 0 0 20px rgba(255,255,255,0.3);
       }
 
+      /* Optimized Ken Burns for Mobile */
+      .hero-bg {
+        /* ... existing props ... */
+        will-change: transform; /* Hint for smoother mobile animation */
+      }
+
       @media (max-width: 768px) {
-        .hero-title {
-          font-size: 2.2rem;
-          margin-bottom: 0.5rem;
+        /* Add floating animation to text wrapper on mobile */
+        .hero-text-wrapper {
+          animation: floatText 4s ease-in-out infinite;
         }
         
-        .hero-subtitle {
-          font-size: 0.95rem;
-          padding: 0 1rem;
+        /* Make scroll indicator slightly higher on mobile to avoid bottom bar */
+        .scroll-down {
+            bottom: 50px; 
         }
-        
-        .btn-hero {
-            padding: 1rem 3rem;
-            width: auto;
-            min-width: 200px;
-        }
+      }
+      
+      @keyframes floatText {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0px); }
       }
     </style>
   `;
