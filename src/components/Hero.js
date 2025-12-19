@@ -170,21 +170,12 @@ export const Hero = () => {
       }
 
       @media (max-width: 768px) {
-        /* Add floating animation to text wrapper on mobile */
-        .hero-text-wrapper {
-          animation: floatText 4s ease-in-out infinite;
-        }
+        /* Add floating animation to text wrapper on mobile - REMOVED */
         
         /* Make scroll indicator slightly higher on mobile to avoid bottom bar */
         .scroll-down {
             bottom: 50px; 
         }
-      }
-      
-      @keyframes floatText {
-        0% { transform: translateY(0px); }
-        50% { transform: translateY(-10px); }
-        100% { transform: translateY(0px); }
       }
     </style>
   `;
