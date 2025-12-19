@@ -12,6 +12,8 @@ import { Loader } from './components/Loader.js'
 import { Reviews } from './components/Reviews.js'
 import { CeoMessage } from './components/CeoMessage.js'
 import { Facilities } from './components/Facilities.js'
+import { StickyFooter } from './components/StickyFooter.js'
+import { CtaSection } from './components/CtaSection.js'
 
 document.querySelector('#app').innerHTML = `
   ${Loader()}
@@ -19,6 +21,7 @@ document.querySelector('#app').innerHTML = `
   <main>
     ${Hero()}
     ${About()}
+    ${CtaSection()}
     ${Services()}
     ${Facilities()}
     ${Gallery()}
@@ -29,6 +32,7 @@ document.querySelector('#app').innerHTML = `
     ${Contact()}
   </main>
   ${Footer()}
+  ${StickyFooter()}
 `
 
 // Mobile Menu Logic
@@ -110,7 +114,8 @@ document.querySelectorAll('.fade-in, .fade-up, .fade-left, .fade-right, .zoom-in
 });
 
 // Loading Screen Logic
-window.addEventListener('load', () => {
+// Loading Screen Logic
+const removeLoader = () => {
   const loader = document.getElementById('loader');
   if (loader) {
     // Add fade-out class after a longer delay to show the loading animation
@@ -123,4 +128,10 @@ window.addEventListener('load', () => {
       }, 800); // Match the CSS transition duration
     }, 1500); // Longer delay to enjoy the loading animation
   }
-});
+};
+
+if (document.readyState === 'complete') {
+  removeLoader();
+} else {
+  window.addEventListener('load', removeLoader);
+}

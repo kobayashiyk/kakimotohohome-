@@ -1,5 +1,5 @@
 export const News = () => {
-    return `
+  return `
     <section id="news" class="section news">
       <div class="container">
         <h2 class="section-title fade-up">新着施工例</h2>
@@ -7,7 +7,7 @@ export const News = () => {
         <div class="news-container fade-up delay-100">
           <div class="news-list">
             
-            <a href="#gallery" class="news-item">
+            <a href="/gallery.html" class="news-item">
               <div class="news-icon">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <polyline points="20 6 9 17 4 12"></polyline>
@@ -17,7 +17,7 @@ export const News = () => {
               <div class="news-title">テナント事務所120坪（33m×11〜16m）の施工例</div>
             </a>
 
-            <a href="#gallery" class="news-item">
+            <a href="/gallery.html" class="news-item">
               <div class="news-icon">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <polyline points="20 6 9 17 4 12"></polyline>
@@ -27,7 +27,7 @@ export const News = () => {
               <div class="news-title">農業用倉庫112坪（24m×15.5m）の施工例</div>
             </a>
 
-            <a href="#gallery" class="news-item">
+            <a href="/gallery.html" class="news-item">
               <div class="news-icon">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <polyline points="20 6 9 17 4 12"></polyline>
@@ -37,7 +37,7 @@ export const News = () => {
               <div class="news-title">シロアリで朽ちたプレハブ土台交換改修工事</div>
             </a>
 
-            <a href="#gallery" class="news-item">
+            <a href="/gallery.html" class="news-item">
               <div class="news-icon">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <polyline points="20 6 9 17 4 12"></polyline>
@@ -47,7 +47,7 @@ export const News = () => {
               <div class="news-title">農業用倉庫19坪（8m×8m 高さ6.4m）の施工例</div>
             </a>
 
-            <a href="#gallery" class="news-item">
+            <a href="/gallery.html" class="news-item">
               <div class="news-icon">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <polyline points="20 6 9 17 4 12"></polyline>
@@ -57,7 +57,7 @@ export const News = () => {
               <div class="news-title">カーポートを電動シャッター付きガレージ風に施工</div>
             </a>
 
-            <a href="#gallery" class="news-item">
+            <a href="/gallery.html" class="news-item">
               <div class="news-icon">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <polyline points="20 6 9 17 4 12"></polyline>

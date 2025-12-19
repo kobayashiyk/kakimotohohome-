@@ -51,7 +51,7 @@ export const Services = () => {
         </div>
         
         <div class="services-cta fade-in" style="text-align: center; margin-top: 5rem;">
-          <a href="#contact" class="btn-primary">無料相談を申し込む</a>
+          <a href="/#contact" class="btn-primary">無料相談を申し込む</a>
         </div>
       </div>
     </section>

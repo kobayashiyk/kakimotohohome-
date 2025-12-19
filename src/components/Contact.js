@@ -20,12 +20,12 @@ export const Contact = () => {
               
               <div class="form-group">
                 <label for="email">メールアドレス</label>
-                <input type="email" id="email" name="email" required placeholder="例：info@kakimoto-home.co.jp">
+                <input type="email" id="email" name="email" required placeholder="例：info@kakimotohome.com">
               </div>
               
               <div class="form-group">
                 <label for="phone">電話番号</label>
-                <input type="tel" id="phone" name="phone" placeholder="例：045-000-0000">
+                <input type="tel" id="phone" name="phone" placeholder="例：0120-654-711">
               </div>
               
               <div class="form-group">
@@ -60,114 +60,192 @@ export const Contact = () => {
       .contact {
         padding: var(--spacing-xl) 0;
         background-color: var(--color-bg-secondary);
+        position: relative;
+        overflow: hidden;
+      }
+
+      /* Decorative background element */
+      .contact::before {
+        content: '';
+        position: absolute;
+        top: -10%;
+        right: -5%;
+        width: 600px;
+        height: 600px;
+        background: radial-gradient(circle, rgba(142, 53, 74, 0.03) 0%, transparent 70%);
+        z-index: 0;
+        pointer-events: none;
       }
 
       .contact-layout {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 4rem;
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
       }
 
       .contact-form-wrapper {
         background-color: var(--color-bg-white);
-        padding: 3rem;
-        border: 1px solid var(--color-border);
+        padding: 4rem;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        border: none;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
       }
 
       .contact-desc {
-        margin-bottom: 3rem;
+        margin-bottom: 2.5rem;
         color: var(--color-text-secondary);
-        line-height: 1.8;
+        line-height: 2;
         text-align: center;
+        font-size: 0.95rem;
       }
 
       .contact-badge {
-        background-color: var(--color-accent);
-        color: white;
+        background-color: transparent;
+        color: var(--color-accent);
         text-align: center;
         display: inline-block;
-        padding: 0.5rem 1.5rem;
-        font-size: 0.9rem;
+        padding: 0.5rem 0;
+        font-size: 1rem;
         font-weight: 500;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
         width: 100%;
-        letter-spacing: 0.1em;
+        letter-spacing: 0.15em;
+        border-bottom: 1px solid var(--color-accent);
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
       }
 
       .form-group {
-        margin-bottom: 2rem;
+        margin-bottom: 2.5rem;
       }
 
       .form-group label {
         display: block;
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.8rem;
         font-size: 0.9rem;
         font-weight: 500;
         color: var(--color-text-primary);
+        letter-spacing: 0.05em;
       }
 
       .form-group input,
       .form-group textarea {
         width: 100%;
-        padding: 1rem 0;
+        padding: 0.8rem 0;
         background: transparent;
         border: none;
-        border-bottom: 1px solid rgba(0,0,0,0.2);
+        border-bottom: 1px solid rgba(0,0,0,0.1);
         color: var(--color-text-primary);
         font-family: inherit;
         font-size: 1rem;
-        transition: border-color 0.3s;
+        transition: all 0.3s ease;
+        border-radius: 0;
       }
 
       .form-group input:focus,
       .form-group textarea:focus {
         outline: none;
         border-bottom-color: var(--color-accent);
+        background-color: rgba(142, 53, 74, 0.01);
+      }
+
+      .form-group input::placeholder,
+      .form-group textarea::placeholder {
+        color: rgba(0,0,0,0.3);
       }
 
       .submit-btn {
         background-color: var(--color-text-primary);
         color: #fff;
         border: none;
-        padding: 1rem 3rem;
+        padding: 1.2rem 3rem;
         font-family: var(--font-sans);
         font-weight: 500;
-        letter-spacing: 0.1em;
+        letter-spacing: 0.2em;
         cursor: pointer;
-        transition: background-color 0.3s;
-        margin-top: 1rem;
+        transition: all 0.4s ease;
+        margin-top: 2rem;
         width: 100%;
+        position: relative;
+        overflow: hidden;
       }
 
       .submit-btn:hover {
         background-color: var(--color-accent);
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(142, 53, 74, 0.2);
+      }
+
+      .contact-map-wrapper {
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         max-width: 1000px;
+         margin: 0 auto;
       }
 
       .map-container {
         width: 100%;
-        height: 400px;
+        height: 450px; /* Fixed height for landscape map */
         background-color: #eee;
-        margin-bottom: 1rem;
-        border: 1px solid var(--color-border);
+        margin-bottom: 0;
+        border: none;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      }
+      
+      .map-container iframe {
+         filter: grayscale(1);
+         transition: filter 0.5s ease;
+      }
+      
+      .map-container iframe:hover {
+          filter: grayscale(0);
+      }
+
+      .map-info {
+        background-color: var(--color-bg-white);
+        padding: 2rem;
+        margin-top: -3rem; /* Overlap upwards */
+        margin-left: auto;
+        margin-right: 2rem; /* Align right side */
+        width: fit-content;
+        min-width: 300px;
+        position: relative;
+        z-index: 2;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.05);
       }
 
       .map-info p {
         margin-bottom: 0.5rem;
-        color: var(--color-text-primary);
+        color: var(--color-text-secondary);
+        font-size: 0.95rem;
+        line-height: 1.8;
+      }
+      
+      .map-info strong {
+          color: var(--color-text-primary);
+          font-weight: 500;
+          font-size: 1.1rem;
+          display: block;
+          margin-bottom: 0.5rem;
       }
 
       @media (max-width: 900px) {
-        .contact-layout {
-          grid-template-columns: 1fr;
-          gap: 3rem;
-        }
-
-        .contact-map-wrapper {
-          order: 2;
-        }
-        
         .contact-form-wrapper {
           padding: 2rem;
+        }
+        
+        .map-info {
+            margin: 1rem 0 0 0;
+            width: 100%;
+            margin-right: 0;
         }
       }
     </style>

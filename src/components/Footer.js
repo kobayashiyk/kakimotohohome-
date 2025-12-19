@@ -4,22 +4,37 @@ export const Footer = () => {
       <div class="container">
         <div class="footer-main fade-in">
           <div class="footer-brand">
-            <img src="/rogo/kakimotorogo-new.png" alt="柿本ホーム" class="footer-logo" />
+            <a href="/" class="footer-logo-text">柿本ホーム株式会社</a>
             <p class="footer-tagline">住まいと快適のプロフェッショナル</p>
             <p class="footer-description">
               1965年の創業以来、横浜を中心に<br>
               お客様の理想の住まいづくりを<br>
               サポートしてまいりました。
             </p>
+            <div class="social-links">
+              <a href="#" aria-label="Instagram">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+              <a href="#" aria-label="Facebook">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+              </a>
+            </div>
           </div>
 
-          <div class="footer-nav">
+          <div class="footer-nav-wrapper">
             <div class="footer-col">
               <h4>事業内容</h4>
               <ul>
                 <li><a href="#services">リフォーム</a></li>
                 <li><a href="#services">外構エクステリア</a></li>
                 <li><a href="#services">新築・建替え</a></li>
+                <li><a href="/gallery.html">施工事例</a></li>
               </ul>
             </div>
 
@@ -28,52 +43,29 @@ export const Footer = () => {
               <ul>
                 <li><a href="#philosophy">企業理念</a></li>
                 <li><a href="#company">会社概要</a></li>
-                <li><a href="#gallery">施工事例</a></li>
+                <li><a href="#reviews">お客様の声</a></li>
+                <li><a href="#news">お知らせ</a></li>
               </ul>
             </div>
 
-            <div class="footer-col">
+            <div class="footer-col contact-col">
               <h4>お問い合わせ</h4>
               <ul>
                 <li>〒225-0025</li>
                 <li>神奈川県横浜市青葉区鉄町1463</li>
-                <li><a href="tel:045-000-0000">TEL: 045-000-0000</a></li>
-                <li><a href="mailto:info@kakimoto-home.co.jp">info@kakimoto-home.co.jp</a></li>
+                <li class="tel-link"><a href="tel:0120-654-711">0120-654-711</a></li>
+                <li class="mail-link"><a href="mailto:info@kakimotohome.com">info@kakimotohome.com</a></li>
               </ul>
-            </div>
-
-            <div class="footer-col">
-              <h4>営業時間</h4>
-              <ul>
-                <li>平日: 9:00 - 18:00</li>
-                <li>土曜: 9:00 - 17:00</li>
-                <li>定休日: 日曜・祝日</li>
-              </ul>
-              <div class="social-links">
-                <a href="#" aria-label="Instagram">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                  </svg>
-                </a>
-                <a href="#" aria-label="Facebook">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                  </svg>
-                </a>
-              </div>
             </div>
           </div>
         </div>
 
         <div class="footer-bottom">
           <div class="footer-bottom-content">
-            <p>&copy; 2025 KAKIMOTO HOME CO., LTD. All Rights Reserved.</p>
+            <p>&copy; 2025 KAKIMOTO HOME CO., LTD.</p>
             <div class="footer-legal">
               <a href="#">プライバシーポリシー</a>
-              <span class="divider">|</span>
-              <a href="#">サイトマップ</a>
+              <a href="#">免責事項</a>
             </div>
           </div>
         </div>
@@ -82,55 +74,72 @@ export const Footer = () => {
     <style>
       .footer {
         background-color: var(--color-bg-secondary);
-        padding: var(--spacing-xl) 0 0;
-        border-top: 1px solid var(--color-border);
+        padding: 6rem 0 2rem;
+        border-top: 1px solid rgba(0,0,0,0.05);
+        color: var(--color-text-primary);
       }
 
       .footer-main {
-        display: grid;
-        grid-template-columns: 1.2fr 2fr;
-        gap: var(--spacing-lg);
-        padding-bottom: var(--spacing-lg);
-        border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+        display: flex;
+        justify-content: space-between;
+        gap: 4rem;
+        margin-bottom: 5rem;
       }
 
       .footer-brand {
-        max-width: 320px;
+        flex: 0 0 300px;
       }
 
-      .footer-logo {
-        height: 60px;
-        width: auto;
-        margin-bottom: 1.5rem;
+      .footer-logo-text {
+        font-family: var(--font-serif);
+        font-size: 1.8rem;
+        font-weight: 500;
+        letter-spacing: 0.1em;
+        color: var(--color-text-primary);
         display: block;
+        margin-bottom: 1rem;
+        text-decoration: none;
       }
 
       .footer-tagline {
-        font-size: 0.95rem;
-        color: var(--color-text-primary);
-        margin-bottom: 1rem;
+        font-size: 0.85rem;
+        color: var(--color-accent);
+        margin-bottom: 1.5rem;
         font-weight: 500;
         letter-spacing: 0.1em;
       }
 
       .footer-description {
-        font-size: 0.85rem;
-        line-height: 1.9;
+        font-size: 0.9rem;
+        line-height: 2;
         color: var(--color-text-secondary);
+        margin-bottom: 2rem;
       }
 
-      .footer-nav {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 3rem;
+      .footer-nav-wrapper {
+        display: flex;
+        gap: 5rem;
+        flex-wrap: wrap;
       }
 
       .footer-col h4 {
         font-size: 1rem;
-        letter-spacing: 0.1em;
-        margin-bottom: 1.5rem;
+        letter-spacing: 0.15em;
+        margin-bottom: 2rem;
         color: var(--color-text-primary);
-        font-weight: 500;
+        font-weight: 600;
+        position: relative;
+        padding-bottom: 0.5rem;
+      }
+      
+      .footer-col h4::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 30px;
+          height: 1px;
+          background-color: var(--color-accent);
       }
 
       .footer-col ul {
@@ -138,36 +147,48 @@ export const Footer = () => {
       }
 
       .footer-col ul li {
-        margin-bottom: 0.9rem;
+        margin-bottom: 1rem;
       }
 
       .footer-col a,
-      .footer-col ul li {
+      .footer-col li {
         color: var(--color-text-secondary);
-        font-size: 0.9rem;
-        transition: color 0.3s ease;
-        line-height: 1.6;
+        font-size: 0.95rem;
+        transition: all 0.3s ease;
+        line-height: 1.5;
+        letter-spacing: 0.05em;
+        text-decoration: none;
       }
 
       .footer-col a:hover {
         color: var(--color-accent);
+        padding-left: 5px;
+      }
+      
+      .contact-col li {
+          margin-bottom: 0.5rem;
+      }
+      
+      .tel-link a {
+          font-family: var(--font-serif);
+          font-size: 1.2rem;
+          color: var(--color-text-primary);
       }
 
       .social-links {
         display: flex;
         gap: 1rem;
-        margin-top: 1.5rem;
       }
 
       .social-links a {
-        width: 36px;
-        height: 36px;
+        width: 40px;
+        height: 40px;
         display: flex;
         align-items: center;
         justify-content: center;
         border: 1px solid var(--color-border);
         border-radius: 50%;
-        color: var(--color-text-secondary);
+        color: var(--color-text-primary);
         transition: all 0.3s ease;
       }
 
@@ -175,11 +196,12 @@ export const Footer = () => {
         background-color: var(--color-accent);
         border-color: var(--color-accent);
         color: white;
-        transform: translateY(-2px);
+        transform: translateY(-3px);
       }
 
       .footer-bottom {
-        padding: var(--spacing-md) 0;
+        padding-top: 2rem;
+        border-top: 1px solid rgba(0, 0, 0, 0.05);
       }
 
       .footer-bottom-content {
@@ -192,69 +214,77 @@ export const Footer = () => {
 
       .footer-bottom p {
         color: var(--color-text-secondary);
-        font-size: 0.75rem;
+        font-size: 0.8rem;
         letter-spacing: 0.05em;
+        opacity: 0.7;
       }
 
       .footer-legal {
         display: flex;
-        gap: 1rem;
-        align-items: center;
+        gap: 2rem;
       }
 
       .footer-legal a {
         color: var(--color-text-secondary);
         font-size: 0.8rem;
         transition: color 0.3s ease;
+        text-decoration: none;
+        opacity: 0.7;
       }
 
       .footer-legal a:hover {
         color: var(--color-text-primary);
-      }
-
-      .footer-legal .divider {
-        color: rgba(0, 0, 0, 0.2);
+        opacity: 1;
       }
 
       @media (max-width: 1024px) {
-        .footer-nav {
-          grid-template-columns: repeat(2, 1fr);
-          gap: 2.5rem;
+        .footer-main {
+          flex-direction: column;
+          gap: 3rem;
+        }
+        
+        .footer-nav-wrapper {
+            gap: 3rem;
+            justify-content: space-between;
         }
       }
 
       @media (max-width: 768px) {
-        .footer-main {
-          grid-template-columns: 1fr;
-          gap: 3rem;
+        .footer {
+            padding: 4rem 0 2rem;
         }
 
-        .footer-brand {
-          max-width: 100%;
-          text-align: center;
-        }
-
-        .footer-logo {
-          margin-left: auto;
-          margin-right: auto;
-        }
-
-        .footer-nav {
-          grid-template-columns: 1fr;
+        .footer-nav-wrapper {
+          flex-direction: column;
           gap: 2.5rem;
         }
-
-        .footer-col {
-          text-align: center;
+        
+        .footer-brand {
+            flex: auto;
+            text-align: center;
         }
-
+        
+        .footer-logo-text {
+            margin-bottom: 0.5rem;
+        }
+        
         .social-links {
-          justify-content: center;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+        
+        .footer-col h4::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .footer-col {
+            text-align: center;
         }
 
         .footer-bottom-content {
           flex-direction: column;
-          text-align: center;
+          gap: 1.5rem;
         }
       }
     </style>

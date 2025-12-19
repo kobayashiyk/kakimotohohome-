@@ -4,177 +4,129 @@ export const Gallery = () => {
       <div class="container">
         <h2 class="section-title fade-up">施工事例</h2>
         
-        <div class="gallery-tabs fade-up delay-100">
-          <button class="gallery-tab active" data-target="reform">建て替え・リフォーム</button>
-          <button class="gallery-tab" data-target="steel">軽量鉄骨建築</button>
+        <div class="gallery-slider fade-up delay-200">
+          <div class="gallery-track">
+            <!-- Item 1 -->
+            <div class="gallery-item">
+              <div class="gallery-image">
+                <img src="/gallery-reform-living.jpg" alt="リビングリフォーム" loading="lazy" />
+                <div class="gallery-overlay">
+                  <h4>リビング</h4>
+                  <p>広々としたくつろぎの空間</p>
+                </div>
+              </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="gallery-item">
+              <div class="gallery-image">
+                <img src="/gallery-reform-kitchen.jpg" alt="キッチンリフォーム" loading="lazy" />
+                <div class="gallery-overlay">
+                  <h4>キッチン</h4>
+                  <p>機能的で美しいシステムキッチン</p>
+                </div>
+              </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="gallery-item">
+              <div class="gallery-image">
+                <img src="/gallery-reform-exterior.jpg" alt="外観・外構" loading="lazy" />
+                <div class="gallery-overlay">
+                  <h4>外観・外構</h4>
+                  <p>和モダンな佇まい</p>
+                </div>
+              </div>
+            </div>
+            <!-- Item 4 -->
+            <div class="gallery-item">
+              <div class="gallery-image">
+                <img src="/gallery-steel-garage.jpg" alt="趣味のガレージ" loading="lazy" />
+                <div class="gallery-overlay">
+                  <h4>趣味のガレージ</h4>
+                  <p>愛車を眺める極上の空間</p>
+                </div>
+              </div>
+            </div>
+             <!-- Item 5 -->
+            <div class="gallery-item">
+              <div class="gallery-image">
+                <img src="/gallery-reform-bath.jpg" alt="バスルーム" loading="lazy" />
+                <div class="gallery-overlay">
+                  <h4>バスルーム</h4>
+                  <p>癒しのバスタイムを演出</p>
+                </div>
+              </div>
+            </div>
+             <!-- Item 6 -->
+            <div class="gallery-item">
+              <div class="gallery-image">
+                <img src="/gallery-steel-office.jpg" alt="事務所・店舗" loading="lazy" />
+                <div class="gallery-overlay">
+                  <h4>事務所・店舗</h4>
+                  <p>ビジネスの顔となるデザイン</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Duplicates for Loop -->
+            <div class="gallery-item">
+              <div class="gallery-image">
+                <img src="/gallery-reform-living.jpg" alt="リビングリフォーム" loading="lazy" />
+                <div class="gallery-overlay">
+                  <h4>リビング</h4>
+                  <p>広々としたくつろぎの空間</p>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <div class="gallery-image">
+                <img src="/gallery-reform-kitchen.jpg" alt="キッチンリフォーム" loading="lazy" />
+                <div class="gallery-overlay">
+                  <h4>キッチン</h4>
+                  <p>機能的で美しいシステムキッチン</p>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <div class="gallery-image">
+                <img src="/gallery-reform-exterior.jpg" alt="外観・外構" loading="lazy" />
+                <div class="gallery-overlay">
+                  <h4>外観・外構</h4>
+                  <p>和モダンな佇まい</p>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <div class="gallery-image">
+                <img src="/gallery-steel-garage.jpg" alt="趣味のガレージ" loading="lazy" />
+                <div class="gallery-overlay">
+                  <h4>趣味のガレージ</h4>
+                  <p>愛車を眺める極上の空間</p>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <div class="gallery-image">
+                <img src="/gallery-reform-bath.jpg" alt="バスルーム" loading="lazy" />
+                <div class="gallery-overlay">
+                  <h4>バスルーム</h4>
+                  <p>癒しのバスタイムを演出</p>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <div class="gallery-image">
+                <img src="/gallery-steel-office.jpg" alt="事務所・店舗" loading="lazy" />
+                <div class="gallery-overlay">
+                  <h4>事務所・店舗</h4>
+                  <p>ビジネスの顔となるデザイン</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="gallery-content fade-up delay-200">
-          
-          <!-- Reform Panel -->
-          <div id="reform" class="gallery-panel active">
-            <div class="gallery-scroll-container">
-              <div class="gallery-track">
-                <!-- Original Items -->
-                <div class="gallery-item">
-                  <div class="gallery-image">
-                    <img src="/gallery-reform-living.jpg" alt="リビングリフォーム" loading="lazy" />
-                    <div class="gallery-overlay">
-                      <h4>リビング</h4>
-                      <p>広々としたくつろぎの空間</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="gallery-item">
-                  <div class="gallery-image">
-                    <img src="/gallery-reform-kitchen.jpg" alt="キッチンリフォーム" loading="lazy" />
-                    <div class="gallery-overlay">
-                      <h4>キッチン</h4>
-                      <p>機能的で美しいシステムキッチン</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="gallery-item">
-                  <div class="gallery-image">
-                    <img src="/gallery-reform-exterior.jpg" alt="外観・外構" loading="lazy" />
-                    <div class="gallery-overlay">
-                      <h4>外観・外構</h4>
-                      <p>和モダンな佇まい</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="gallery-item">
-                  <div class="gallery-image">
-                    <img src="/gallery-reform-bath.jpg" alt="バスルーム" loading="lazy" />
-                    <div class="gallery-overlay">
-                      <h4>バスルーム</h4>
-                      <p>癒しのバスタイムを演出</p>
-                    </div>
-                  </div>
-                </div>
-                <!-- Duplicate Items for Loop -->
-                <div class="gallery-item">
-                  <div class="gallery-image">
-                    <img src="/gallery-reform-living.jpg" alt="リビングリフォーム" loading="lazy" />
-                    <div class="gallery-overlay">
-                      <h4>リビング</h4>
-                      <p>広々としたくつろぎの空間</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="gallery-item">
-                  <div class="gallery-image">
-                    <img src="/gallery-reform-kitchen.jpg" alt="キッチンリフォーム" loading="lazy" />
-                    <div class="gallery-overlay">
-                      <h4>キッチン</h4>
-                      <p>機能的で美しいシステムキッチン</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="gallery-item">
-                  <div class="gallery-image">
-                    <img src="/gallery-reform-exterior.jpg" alt="外観・外構" loading="lazy" />
-                    <div class="gallery-overlay">
-                      <h4>外観・外構</h4>
-                      <p>和モダンな佇まい</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="gallery-item">
-                  <div class="gallery-image">
-                    <img src="/gallery-reform-bath.jpg" alt="バスルーム" loading="lazy" />
-                    <div class="gallery-overlay">
-                      <h4>バスルーム</h4>
-                      <p>癒しのバスタイムを演出</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Steel Panel -->
-          <div id="steel" class="gallery-panel">
-            <div class="gallery-scroll-container">
-              <div class="gallery-track">
-                <!-- Original Items -->
-                <div class="gallery-item">
-                  <div class="gallery-image">
-                    <img src="/gallery-steel-garage.jpg" alt="趣味のガレージ" loading="lazy" />
-                    <div class="gallery-overlay">
-                      <h4>趣味のガレージ</h4>
-                      <p>愛車を眺める極上の空間</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="gallery-item">
-                  <div class="gallery-image">
-                    <img src="/gallery-steel-warehouse.jpg" alt="法人倉庫" loading="lazy" />
-                    <div class="gallery-overlay">
-                      <h4>法人倉庫</h4>
-                      <p>大空間を実現する鉄骨構造</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="gallery-item">
-                  <div class="gallery-image">
-                    <img src="/gallery-steel-factory.jpg" alt="工場・作業場" loading="lazy" />
-                    <div class="gallery-overlay">
-                      <h4>工場・作業場</h4>
-                      <p>機能性と清潔感を両立</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="gallery-item">
-                  <div class="gallery-image">
-                    <img src="/gallery-steel-office.jpg" alt="事務所・店舗" loading="lazy" />
-                    <div class="gallery-overlay">
-                      <h4>事務所・店舗</h4>
-                      <p>ビジネスの顔となるデザイン</p>
-                    </div>
-                  </div>
-                </div>
-                <!-- Duplicate Items for Loop -->
-                <div class="gallery-item">
-                  <div class="gallery-image">
-                    <img src="/gallery-steel-garage.jpg" alt="趣味のガレージ" loading="lazy" />
-                    <div class="gallery-overlay">
-                      <h4>趣味のガレージ</h4>
-                      <p>愛車を眺める極上の空間</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="gallery-item">
-                  <div class="gallery-image">
-                    <img src="/gallery-steel-warehouse.jpg" alt="法人倉庫" loading="lazy" />
-                    <div class="gallery-overlay">
-                      <h4>法人倉庫</h4>
-                      <p>大空間を実現する鉄骨構造</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="gallery-item">
-                  <div class="gallery-image">
-                    <img src="/gallery-steel-factory.jpg" alt="工場・作業場" loading="lazy" />
-                    <div class="gallery-overlay">
-                      <h4>工場・作業場</h4>
-                      <p>機能性と清潔感を両立</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="gallery-item">
-                  <div class="gallery-image">
-                    <img src="/gallery-steel-office.jpg" alt="事務所・店舗" loading="lazy" />
-                    <div class="gallery-overlay">
-                      <h4>事務所・店舗</h4>
-                      <p>ビジネスの顔となるデザイン</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
+        <div class="gallery-more fade-up delay-300">
+          <a href="/gallery.html" class="btn-more">施工事例一覧を見る</a>
         </div>
       </div>
     </section>
@@ -182,51 +134,20 @@ export const Gallery = () => {
       .gallery {
         padding: var(--spacing-xl) 0;
         background-color: var(--color-bg-white);
-        overflow: hidden; /* Prevent horizontal scrollbar on body */
+        overflow: hidden; /* Prevent horizontal scroll */
       }
-
-      .gallery-tabs {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-        margin-bottom: 3rem;
-      }
-
-      .gallery-tab {
-        padding: 0.8rem 2.5rem;
-        background: transparent;
-        border: 1px solid var(--color-border);
-        font-size: 1rem;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        letter-spacing: 0.1em;
+      
+      .section-subtitle {
+        text-align: center;
         color: var(--color-text-secondary);
+        margin-bottom: 3rem;
+        letter-spacing: 0.1em;
+        font-size: 0.9rem;
       }
 
-      .gallery-tab.active,
-      .gallery-tab:hover {
-        background-color: var(--color-text-primary);
-        color: #fff;
-        border-color: var(--color-text-primary);
-      }
-
-      .gallery-panel {
-        display: none;
-        animation: fadeIn 0.5s ease;
-      }
-
-      .gallery-panel.active {
-        display: block;
-      }
-
-      @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(10px); }
-        to { opacity: 1; transform: translateY(0); }
-      }
-
-      /* Infinite Scroll Styles */
-      .gallery-scroll-container {
+      .gallery-slider {
         width: 100%;
+        margin-bottom: 3rem;
         overflow: hidden;
       }
 
@@ -249,8 +170,8 @@ export const Gallery = () => {
         position: relative;
         overflow: hidden;
         cursor: pointer;
-        height: 350px;
-        width: 450px; /* Fixed width */
+        height: 300px;
+        width: 400px; /* Fixed width for slideshow */
         margin-right: 2rem;
         flex-shrink: 0;
       }
@@ -288,34 +209,45 @@ export const Gallery = () => {
       }
 
       .gallery-overlay h4 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         margin-bottom: 0.5rem;
         font-weight: 600;
-        letter-spacing: 0.05em;
         text-shadow: 0 2px 4px rgba(0,0,0,0.5);
-        color: #fff;
       }
 
       .gallery-overlay p {
-        font-size: 0.9rem;
-        opacity: 1;
-        font-weight: 400;
+        font-size: 0.85rem;
         text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+      }
+
+      .gallery-more {
+        text-align: center;
+      }
+
+      .btn-more {
+        display: inline-block;
+        padding: 1rem 3rem;
+        border: 1px solid var(--color-text-primary);
+        color: var(--color-text-primary);
+        text-decoration: none;
+        transition: all 0.3s ease;
+        letter-spacing: 0.1em;
+      }
+
+      .btn-more:hover {
+        background-color: var(--color-text-primary);
         color: #fff;
       }
 
       @media (max-width: 768px) {
         .gallery-item {
-          width: 300px;
-          height: 250px;
+          width: 280px;
+          height: 220px;
           margin-right: 1rem;
-        }
-        
-        .gallery-tab {
-          padding: 0.6rem 1.5rem;
-          font-size: 0.9rem;
         }
       }
     </style>
   `;
 }
+
+

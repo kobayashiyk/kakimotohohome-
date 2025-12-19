@@ -4,11 +4,11 @@ export const Hero = () => {
       <div class="hero-overlay"></div>
       <div class="container hero-content">
         <div class="hero-text-wrapper">
-          <h1 class="hero-title text-vertical fade-up delay-200">
-            <span class="d-block">時を</span>
-            <span class="d-block">重ね、</span>
-            <span class="d-block">想いを</span>
-            <span class="d-block">紡ぐ。</span>
+          <h1 class="hero-title text-vertical fade-up delay-200" aria-label="時を重ね、想いを紡ぐ。">
+            <span class="d-block" aria-hidden="true">時を</span>
+            <span class="d-block" aria-hidden="true">重ね、</span>
+            <span class="d-block" aria-hidden="true">想いを</span>
+            <span class="d-block" aria-hidden="true">紡ぐ。</span>
           </h1>
           <p class="hero-subtitle text-vertical fade-up delay-400">
             創業五十年、<br>地域と共に歩む工務店。
