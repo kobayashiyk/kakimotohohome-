@@ -14,7 +14,7 @@ export const Header = () => {
         <nav class="nav">
           <ul class="nav-list">
             <li class="nav-item"><a href="/" class="nav-link">ホーム</a></li>
-            <li class="nav-item"><a href="#about" class="nav-link">私たちについて</a></li>
+            <li class="nav-item"><a href="#philosophy" class="nav-link">私たちについて</a></li>
             <li class="nav-item"><a href="#services" class="nav-link">事業案内</a></li>
             <li class="nav-item"><a href="/gallery.html" class="nav-link">施工事例</a></li>
             <li class="nav-item"><a href="#reviews" class="nav-link">お客様の声</a></li>
