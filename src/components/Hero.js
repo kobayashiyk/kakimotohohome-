@@ -23,7 +23,7 @@ export const Hero = () => {
         </div>
         
         <div class="scroll-down">
-          <span>スクロール</span>
+          <!-- Text removed as per user request to avoid Katakana/English -->
           <div class="arrow"></div>
         </div>
     </section>
