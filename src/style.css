@@ -139,7 +139,8 @@ img {
   }
 
   .container {
-    padding: 0 1.25rem;
+    padding: 0 2rem;
+    /* Increased from 1.25rem to 2rem */
   }
 
   h1,
