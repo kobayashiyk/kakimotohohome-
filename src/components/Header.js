@@ -40,10 +40,11 @@ export const Header = () => {
       .header-container {
         max-width: 1200px;
         margin: 0 auto;
-        padding: 0 2rem;
+        padding: 0 1.5rem; /* Adjusted mobile padding */
         display: flex;
         justify-content: space-between;
         align-items: center;
+        height: 100%; /* Ensure full height usage */
       }
 
       .logo {

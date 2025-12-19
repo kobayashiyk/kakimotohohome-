@@ -13,8 +13,8 @@ export const News = () => {
                   <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
               </div>
-              <div class="news-date">2025/11/25</div>
-              <div class="news-title">テナント事務所120坪（33m×11〜16m）の施工例</div>
+              <div class="news-date">2025/--/--</div>
+              <div class="news-title">新着施工事例のタイトルが入ります</div>
             </a>
 
             <a href="/gallery.html" class="news-item">
@@ -23,8 +23,8 @@ export const News = () => {
                   <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
               </div>
-              <div class="news-date">2025/11/14</div>
-              <div class="news-title">農業用倉庫112坪（24m×15.5m）の施工例</div>
+              <div class="news-date">2025/--/--</div>
+              <div class="news-title">新着施工事例のタイトルが入ります</div>
             </a>
 
             <a href="/gallery.html" class="news-item">
@@ -33,8 +33,8 @@ export const News = () => {
                   <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
               </div>
-              <div class="news-date">2025/11/10</div>
-              <div class="news-title">シロアリで朽ちたプレハブ土台交換改修工事</div>
+              <div class="news-date">2025/--/--</div>
+              <div class="news-title">新着施工事例のタイトルが入ります</div>
             </a>
 
             <a href="/gallery.html" class="news-item">
@@ -43,8 +43,8 @@ export const News = () => {
                   <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
               </div>
-              <div class="news-date">2025/11/08</div>
-              <div class="news-title">農業用倉庫19坪（8m×8m 高さ6.4m）の施工例</div>
+              <div class="news-date">2025/--/--</div>
+              <div class="news-title">新着施工事例のタイトルが入ります</div>
             </a>
 
             <a href="/gallery.html" class="news-item">
@@ -53,18 +53,8 @@ export const News = () => {
                   <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
               </div>
-              <div class="news-date">2025/05/08</div>
-              <div class="news-title">カーポートを電動シャッター付きガレージ風に施工</div>
-            </a>
-
-            <a href="/gallery.html" class="news-item">
-              <div class="news-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-              </div>
-              <div class="news-date">2025/03/25</div>
-              <div class="news-title">遮熱カバー工法で工場屋根の遮熱工事をしました</div>
+              <div class="news-date">2025/--/--</div>
+              <div class="news-title">新着施工事例のタイトルが入ります</div>
             </a>
 
           </div>

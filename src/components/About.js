@@ -136,9 +136,10 @@ export const About = () => {
         color: var(--color-accent);
         letter-spacing: 0.1em;
         border: 1px solid var(--color-accent);
-        padding: 0.5rem 1rem;
-        min-width: 120px;
+        padding: 0.6rem 1rem; /* Slightly more padding */
+        min-width: 140px; /* Increased min-width to hold text better */
         text-align: center;
+        flex-shrink: 0; /* Prevent shrinking */
       }
 
       @media (max-width: 768px) {

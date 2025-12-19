@@ -112,10 +112,19 @@ export const Reviews = () => {
       .review-meta {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start; /* Align top in case of wrapping */
         margin-bottom: 1rem;
         font-size: 0.85rem;
         color: var(--color-text-secondary);
+        gap: 0.5rem; /* Add gap */
+      }
+      
+      @media (max-width: 480px) {
+        .review-meta {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
       }
 
       .review-badge {
