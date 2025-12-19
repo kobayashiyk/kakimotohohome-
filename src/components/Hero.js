@@ -12,13 +12,7 @@ export const Hero = () => {
             横浜で創業五十年。<br>あなたの人生に寄り添う家づくり。
           </p>
           <div class="hero-cta-wrapper">
-             <div class="cta-actions">
-                <!-- Phone button removed as requested -->
-                <a href="#contact" class="btn-hero btn-hero-mail">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hero-icon"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                  お問い合わせ
-                </a>
-             </div>
+             <!-- Contact button removed as requested -->
           </div>
         </div>
         
