@@ -6,7 +6,7 @@ export const Hero = () => {
         <div class="hero-text-wrapper fade-up delay-200">
           <h1 class="hero-title">
             <span>時とともに、</span>
-            <span>深まる家。</span>
+            <span>深まる家</span>
           </h1>
           <p class="hero-subtitle">
             横浜で創業五十年。<br>あなたの人生に寄り添う家づくり。
