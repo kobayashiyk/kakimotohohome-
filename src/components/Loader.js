@@ -9,7 +9,7 @@ export const Loader = () => {
           <div class="bar"></div>
           <div class="bar"></div>
         </div>
-        <p class="loader-text">柿本ホーム株式会社</p>
+          <div class="loader-text">柿本ホーム産業株式会社</div>
       </div>
     </div>
     <style>

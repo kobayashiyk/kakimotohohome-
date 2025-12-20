@@ -62,7 +62,7 @@ export const Footer = () => {
 
         <div class="footer-bottom">
           <div class="footer-bottom-content">
-            <p>&copy; 2025 KAKIMOTO HOME CO., LTD.</p>
+            <p class="copyright">&copy; 2024 柿本ホーム産業株式会社 All Rights Reserved.</p>
             <div class="footer-legal">
               <a href="#">プライバシーポリシー</a>
               <a href="#">免責事項</a>
