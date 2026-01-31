@@ -4,7 +4,7 @@ export const Footer = () => {
       <div class="container">
         <div class="footer-main fade-in">
           <div class="footer-brand">
-            <a href="/" class="footer-logo-text">柿本ホーム株式会社</a>
+            <a href="/" class="footer-logo-text">柿本ホーム産業</a>
             <p class="footer-tagline">住まいと快適のプロフェッショナル</p>
             <p class="footer-description">
               1965年の創業以来、横浜を中心に<br>

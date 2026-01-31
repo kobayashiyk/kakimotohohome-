@@ -14,22 +14,75 @@ export const Contact = () => {
             
             <form class="contact-form" onsubmit="event.preventDefault(); alert('送信機能は現在実装されていません。');">
               <div class="form-group">
+                <label for="inquiry-type">お問い合わせ内容</label>
+                <div class="select-wrapper">
+                  <select id="inquiry-type" name="inquiry-type" required>
+                    <option value="" disabled selected>選択してください</option>
+                    <option value="renovation">リフォーム</option>
+                    <option value="new-construction">新築</option>
+                    <option value="light-steel">軽量鉄骨</option>
+                    <option value="other">その他</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
                 <label for="name">お名前</label>
                 <input type="text" id="name" name="name" required placeholder="例：柿本 太郎">
+              </div>
+
+              <div class="form-group-row">
+                <div class="form-group zip-group">
+                  <label for="postal-code">郵便番号</label>
+                  <input type="text" id="postal-code" name="postal-code" placeholder="例：225-0025">
+                </div>
+                <div class="form-group address-group">
+                  <label for="address">ご住所</label>
+                  <input type="text" id="address" name="address" placeholder="例：神奈川県横浜市青葉区鉄町1463">
+                </div>
               </div>
               
               <div class="form-group">
                 <label for="email">メールアドレス</label>
                 <input type="email" id="email" name="email" required placeholder="例：info@kakimotohome.com">
+                <div class="email-domains">
+                  <button type="button" class="domain-btn" data-domain="@gmail.com">@gmail.com</button>
+                  <button type="button" class="domain-btn" data-domain="@yahoo.co.jp">@yahoo.co.jp</button>
+                  <button type="button" class="domain-btn" data-domain="@icloud.com">@icloud.com</button>
+                </div>
               </div>
               
               <div class="form-group">
                 <label for="phone">電話番号</label>
                 <input type="tel" id="phone" name="phone" placeholder="例：0120-654-711">
               </div>
+
+              <div class="form-group">
+                <label>ご希望連絡方法</label>
+                <div class="radio-group">
+                  <label class="radio-label">
+                    <input type="radio" name="contact-method" value="email" checked> メール
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="contact-method" value="phone"> 電話
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>過去弊社を利用したことがあるか</label>
+                <div class="radio-group">
+                  <label class="radio-label">
+                    <input type="radio" name="past-usage" value="yes"> ある
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="past-usage" value="no" checked> ない
+                  </label>
+                </div>
+              </div>
               
               <div class="form-group">
-                <label for="message">お問い合わせ内容</label>
+                <label for="message">お問い合わせ内容（詳細）</label>
                 <textarea id="message" name="message" rows="5" required placeholder="ご相談内容をご記入ください"></textarea>
               </div>
               
@@ -49,7 +102,7 @@ export const Contact = () => {
               </iframe>
             </div>
             <div class="map-info">
-              <p><strong>柿本ホーム産業株式会社</strong></p>
+              <p><strong>柿本ホーム産業</strong></p>
               <p>〒225-0025 神奈川県横浜市青葉区鉄町1463</p>
             </div>
           </div>
@@ -247,6 +300,108 @@ export const Contact = () => {
             width: 100%;
             margin-right: 0;
         }
+        
+        .form-group-row {
+          flex-direction: column;
+          gap: 0;
+        }
+      }
+
+      /* New Styles for Added Fields */
+      .form-group-row {
+        display: flex;
+        gap: 2rem;
+        align-items: flex-start;
+      }
+
+      .zip-group {
+        flex: 0 0 150px; /* Fixed width for zip code */
+      }
+
+      .address-group {
+        flex: 1;
+      }
+
+      .select-wrapper {
+        position: relative;
+      }
+
+      .select-wrapper::after {
+        content: '▼';
+        font-size: 0.8rem;
+        position: absolute;
+        right: 0;
+        bottom: 1rem;
+        color: var(--color-text-secondary);
+        pointer-events: none;
+      }
+
+      .form-group select {
+        width: 100%;
+        padding: 0.8rem 0;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        color: var(--color-text-primary);
+        font-family: inherit;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+        border-radius: 0;
+        appearance: none; /* Remove default arrow */
+        cursor: pointer;
+      }
+
+      .form-group select:focus {
+        outline: none;
+        border-bottom-color: var(--color-accent);
+        background-color: rgba(142, 53, 74, 0.01);
+      }
+
+      .radio-group {
+        display: flex;
+        gap: 2rem;
+        padding-top: 0.5rem;
+      }
+
+      .radio-label {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        cursor: pointer;
+        font-size: 1rem;
+        color: var(--color-text-primary);
+      }
+
+      .radio-label input[type="radio"] {
+        margin: 0;
+        width: 1.2rem;
+        height: 1.2rem;
+        accent-color: var(--color-accent); /* Modern browser support */
+        cursor: pointer;
+      }
+
+      .email-domains {
+        display: flex;
+        gap: 0.5rem;
+        margin-top: 0.5rem;
+        flex-wrap: wrap;
+      }
+
+      .domain-btn {
+        background: transparent;
+        border: 1px solid var(--color-border);
+        border-radius: 4px;
+        padding: 0.2rem 0.6rem;
+        font-size: 0.8rem;
+        color: var(--color-text-secondary);
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+
+      .domain-btn:hover {
+        background: var(--color-bg-secondary);
+        color: var(--color-accent);
+        border-color: var(--color-accent);
       }
     </style>
   `;

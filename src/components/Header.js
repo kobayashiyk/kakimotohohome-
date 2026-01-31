@@ -3,7 +3,7 @@ export const Header = () => {
     <header class="header">
       <div class="header-container">
         <a href="/" class="logo">
-          <span class="logo-text">柿本ホーム産業株式会社</span>
+          <span class="logo-text">柿本ホーム産業</span>
         </a>
         
         <button class="mobile-menu-toggle" aria-label="メニューを開く">

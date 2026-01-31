@@ -42,7 +42,7 @@ export const Company = () => {
           <dl class="company-overview">
             <div class="overview-item">
               <dt>会社名</dt>
-              <dd>柿本ホーム産業株式会社</dd>
+              <dd>柿本ホーム産業</dd>
             </div>
             <div class="overview-item">
               <dt>所在地</dt>

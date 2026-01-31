@@ -4,7 +4,7 @@ export const CeoMessage = () => {
       <div class="container">
         <div class="ceo-content-wrapper">
           <div class="ceo-image-container fade-right">
-            <img src="/ceo.png" alt="代表取締役 井上 博善" class="ceo-image" />
+            <img src="/ceo.jpg" alt="代表取締役 井上 博善" class="ceo-image" />
           </div>
           <div class="ceo-text-content fade-left">
             <h2 class="section-title text-left">代表挨拶</h2>
@@ -41,6 +41,13 @@ export const CeoMessage = () => {
         height: 500px;
         background-color: #f0f0f0;
         overflow: hidden;
+      }
+
+      .ceo-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top center; /* Ensure top of head isn't cut off */
       }
 
       .ceo-image-placeholder {
