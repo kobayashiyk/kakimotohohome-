@@ -1,22 +1,26 @@
 :root {
-  /* Modern Clean Palette */
+  /* Modern Clean Palette - Warm & Premium */
   --color-bg-dark: #ffffff;
   /* Pure White */
-  --color-bg-secondary: #f8f9fa;
-  /* Light Gray for sections */
+
+  /* NEW: Warm Greige (Porcelain/Sand) - Replaces cold gray */
+  --color-bg-secondary: #f4f3ef;
+  --color-bg-warm: #faf9f6;
+  /* Very subtle warm white */
+
   --color-bg-white: #ffffff;
 
-  --color-text-primary: #333333;
-  /* Dark Gray */
-  --color-text-secondary: #666666;
-  /* Medium Gray */
+  --color-text-primary: #3d3b38;
+  /* Warm Charcoal instead of sharp black */
+  --color-text-secondary: #6e6b65;
+  /* Warm Gray */
 
-  --color-accent: #f39c12;
-  /* Brand Orange - Warmth and Energy */
-  --color-accent-hover: #e67e22;
+  --color-accent: #d88d2d;
+  /* slightly richer gold/orange */
+  --color-accent-hover: #c27a1f;
 
-  --color-border: #e0e0e0;
-  /* Subtle gray border */
+  --color-border: #e6e3dc;
+  /* Warm border */
 
   /* Fonts - Modern Standard */
   --font-primary: 'Noto Sans JP', sans-serif;
@@ -26,11 +30,13 @@
   --spacing-xs: 1rem;
   --spacing-sm: 2.5rem;
   --spacing-md: 5rem;
-  --spacing-lg: 10rem;
-  --spacing-xl: 15rem;
+  --spacing-lg: 8rem;
+  /* Creating better vertical rhythm */
+  --spacing-xl: 12rem;
 
   /* Transitions - Slower, more deliberate */
-  --transition-fast: 0.4s ease;
+  --transition-fast: 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  /* Silkier ease */
   --transition-slow: 1.2s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
@@ -44,12 +50,27 @@ body {
   font-family: var(--font-primary);
   background-color: var(--color-bg-dark);
   color: var(--color-text-primary);
-  line-height: 2.0;
+  line-height: 1.8;
+  /* Slightly tighter for better readability */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
   /* Optical kerning for logo-like text quality */
   font-feature-settings: "palt" 1;
+}
+
+/* Subtle Noise Texture for "Paper-like" Feel */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.4;
 }
 
 h1,
@@ -60,11 +81,10 @@ h5,
 h6 {
   font-family: var(--font-heading);
   font-weight: 700;
-  /* Slightly bolder for modern feel */
-  letter-spacing: 0.08em;
-  /* Refined spacing */
+  letter-spacing: 0.05em;
+  /* Cleaner heading tracking */
   color: var(--color-text-primary);
-  line-height: 1.5;
+  line-height: 1.4;
   font-feature-settings: "palt" 1;
 }
 
@@ -88,20 +108,19 @@ img {
   max-width: 1280px;
   /* Modern wide container */
   margin: 0 auto;
-  padding: 0 var(--spacing-sm);
+  padding: 0 4rem;
+  /* Increased padding as requested */
 }
 
 /* Typography Utility Classes */
 .text-vertical {
   writing-mode: horizontal-tb;
-  /* Reset vertical text to horizontal for modern */
   text-orientation: mixed;
   letter-spacing: 0.1em;
 }
 
 .section-title {
   font-size: clamp(2rem, 4vw, 2.5rem);
-  /* More restrained size */
   text-align: center;
   margin-bottom: var(--spacing-md);
   position: relative;
@@ -110,43 +129,35 @@ img {
   padding-bottom: 2rem;
 }
 
-.section-title::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60px;
-  height: 1px;
-  background-color: var(--color-accent);
-}
-
 /* Mobile Typography & Spacing */
 @media (max-width: 768px) {
   :root {
-    /* Drastically reduced mobile spacing */
-    --spacing-xs: 0.5rem;
+    /* Standardized Mobile Spacing */
+    --spacing-xs: 0.75rem;
     --spacing-sm: 1.5rem;
-    --spacing-md: 3rem;
-    --spacing-lg: 4rem;
-    --spacing-xl: 6rem;
+    /* 24px side padding */
+    --spacing-md: 3.5rem;
+    /* Section gap */
+    --spacing-lg: 5rem;
+    --spacing-xl: 7rem;
   }
 
   body {
-    font-size: 14px;
+    font-size: 15px;
+    /* Improved readability */
     line-height: 1.75;
   }
 
   .section-title {
-    font-size: 1.6rem;
+    font-size: 1.75rem;
     margin-bottom: 2.5rem;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.05em;
     padding-bottom: 1.5rem;
   }
 
   .container {
-    padding: 0 1.25rem;
-    /* Standard mobile padding */
+    padding: 0 var(--spacing-sm);
+    /* Consistent 1.5rem padding */
   }
 
   h1,
@@ -154,7 +165,7 @@ img {
   h3,
   h4 {
     word-break: break-word;
-    /* Prevent overflow */
+    line-height: 1.4;
   }
 }
 
@@ -245,30 +256,33 @@ img {
 }
 
 /* Enhanced Shadow System */
+/* Enhanced Shadow System - Premium Soft Shadows */
 .shadow-soft {
   box-shadow:
-    0 2px 8px rgba(0, 0, 0, 0.04),
-    0 4px 16px rgba(0, 0, 0, 0.03);
+    0 10px 40px -10px rgba(0, 0, 0, 0.08),
+    /* Diffuse Ambient */
+    0 2px 10px -2px rgba(0, 0, 0, 0.05);
+  /* Detailed Key */
 }
 
 .shadow-medium {
   box-shadow:
-    0 4px 12px rgba(0, 0, 0, 0.05),
-    0 8px 24px rgba(0, 0, 0, 0.04);
+    0 20px 50px -12px rgba(0, 0, 0, 0.12),
+    0 4px 12px -2px rgba(0, 0, 0, 0.08);
 }
 
 .shadow-strong {
   box-shadow:
-    0 8px 20px rgba(0, 0, 0, 0.06),
-    0 16px 40px rgba(0, 0, 0, 0.05);
+    0 30px 60px -15px rgba(0, 0, 0, 0.15),
+    0 8px 24px -4px rgba(0, 0, 0, 0.12);
 }
 
-/* Glassmorphism */
+/* Glassmorphism - Premium Crisp */
 .glass {
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.6);
 }
 
 /* Glow Effects - More subtle for timeless design */
@@ -569,8 +583,21 @@ img {
 .ceo-section {
   padding: var(--spacing-xl) 0;
   background-color: var(--color-bg-white);
+  position: relative;
   overflow: hidden;
-  /* For animations */
+}
+
+/* Add subtle decoration to CEO section */
+.ceo-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30%;
+  height: 100%;
+  background: linear-gradient(to left, var(--color-bg-warm), transparent);
+  opacity: 0.5;
+  z-index: 0;
 }
 
 .ceo-content-wrapper {
@@ -583,11 +610,13 @@ img {
 .ceo-image-container {
   position: relative;
   width: 100%;
-  height: 500px;
-  /* Fixed height for consistency */
+  height: auto;
+  /* Allow natural height */
+  aspect-ratio: 4 / 3;
+  /* Standard ratio, change if needed */
   background-color: #f0f0f0;
-  /* Fallback */
   overflow: hidden;
+  border-radius: 8px;
 }
 
 .ceo-image-placeholder {
@@ -606,6 +635,8 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 20%;
+  /* Focus on upper center for portraits */
   transition: transform 0.8s ease;
 }
 
@@ -663,11 +694,24 @@ img {
   }
 
   .ceo-image-container {
-    height: 400px;
+    height: auto;
+    max-width: 500px;
+    margin: 0 auto;
+    order: 1;
   }
 
   .ceo-heading {
     font-size: 1.5rem;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+}
+
+@media (min-width: 901px) {
+  .mobile-only {
+    display: none;
   }
 }
 

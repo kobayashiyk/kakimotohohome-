@@ -5,8 +5,7 @@ export const Hero = () => {
       <div class="hero-overlay"></div>
         <div class="hero-text-wrapper fade-up delay-200">
           <h1 class="hero-title">
-            <span>理想の暮らしを、</span>
-            <span>カタチに。</span>
+            理想の暮らしを、<br>カタチに。
           </h1>
           <p class="hero-subtitle">
             横浜で創業50年。地域密着のリフォーム・注文住宅。<br>
@@ -113,12 +112,12 @@ export const Hero = () => {
 
       .hero-title {
         font-family: var(--font-heading);
-        font-size: clamp(2.5rem, 6vw, 4.5rem);
+        font-size: clamp(2.8rem, 7vw, 5rem); /* Slightly larger scaling */
         font-weight: 700;
         color: #ffffff;
-        line-height: 1.3;
-        letter-spacing: 0.15em;
-        text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        line-height: 1.25;
+        letter-spacing: 0.1em;
+        text-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Softer, deeper shadow */
       }
 
       .hero-subtitle {
@@ -150,7 +149,8 @@ export const Hero = () => {
             text-align: center;
             width: 100%;
             /* Balance letter spacing for true center */
-            text-indent: 0.15em;
+            text-indent: 0;
+            letter-spacing: 0.1em;
         }
 
         /* Make scroll indicator slightly higher on mobile to avoid bottom bar */

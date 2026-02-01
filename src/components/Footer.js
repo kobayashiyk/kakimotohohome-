@@ -271,6 +271,10 @@ export const Footer = () => {
         .footer-logo-text {
             margin-bottom: 0.5rem;
         }
+
+        .footer-logo-img {
+            margin: 0 auto;
+        }
         
         .social-links {
             justify-content: center;

@@ -39,7 +39,7 @@ export const About = () => {
     <style>
       .philosophy {
         padding: var(--spacing-xl) 0;
-        background-color: var(--color-bg-white);
+        background-color: var(--color-bg-warm); /* Subtle warmth */
       }
 
       .philosophy-layout {

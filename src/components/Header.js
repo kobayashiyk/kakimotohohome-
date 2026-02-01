@@ -31,16 +31,19 @@ export const Header = () => {
         left: 0;
         width: 100%;
         z-index: 100;
-        background-color: rgba(255, 255, 255, 0.95); /* Pure White */
-        border-bottom: 1px solid var(--color-border);
-        padding: 1.5rem 0;
+        background-color: rgba(255, 255, 255, 0.85); /* More translucent */
+        backdrop-filter: blur(20px) saturate(180%);
+        -webkit-backdrop-filter: blur(20px) saturate(180%);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03); /* Subtle depth */
+        padding: 1.25rem 0; /* Slightly tighter vertical */
         transition: all 0.3s ease;
       }
 
       .header-container {
         max-width: 1280px; /* Match global container */
         margin: 0 auto;
-        padding: 0 1.5rem; /* Adjusted mobile padding */
+        padding: 0 2rem; /* Wider breathing room */
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -65,7 +68,7 @@ export const Header = () => {
         }
         
         .header-container {
-          padding: 0 1.25rem; /* Match global mobile padding */
+          padding: 0 var(--spacing-sm); /* Match global mobile padding (1.5rem) */
         }
       }
 

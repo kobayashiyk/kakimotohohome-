@@ -93,16 +93,23 @@ export const Reviews = () => {
       .review-card {
         background-color: var(--color-bg-white);
         padding: 2.5rem;
-        border: 1px solid var(--color-border);
+        border: 1px solid rgba(0,0,0,0.03);
+        border-radius: 16px;
+        box-shadow: 
+          0 4px 20px -5px rgba(0, 0, 0, 0.05),
+          0 10px 15px -10px rgba(0, 0, 0, 0.02);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        transition: transform 0.3s ease;
+        transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.5s ease;
       }
 
       .review-card:hover {
-        transform: translateY(-3px);
-        border-color: var(--color-accent);
+        transform: translateY(-8px);
+        box-shadow: 
+           0 20px 40px -10px rgba(0, 0, 0, 0.08),
+           0 12px 20px -12px rgba(0, 0, 0, 0.06);
+        border-color: rgba(243, 156, 18, 0.2);
       }
 
       .review-header {

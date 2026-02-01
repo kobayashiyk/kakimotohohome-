@@ -72,16 +72,18 @@ export const Services = () => {
         display: flex;
         flex-direction: column;
         height: 100%;
-        border: none; /* Removed border */
-        border-radius: 12px; /* Modern rounded corners */
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Soft baseline shadow */
-        transition: transform 0.4s ease, box-shadow 0.4s ease;
+        border: 1px solid rgba(0,0,0,0.03); /* Very subtle border */
+        border-radius: 16px; /* Increased radius */
+        box-shadow: 
+          0 4px 20px -5px rgba(0, 0, 0, 0.05),
+          0 10px 15px -10px rgba(0, 0, 0, 0.02); /* Multi-layered soft shadow */
+        transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.5s ease;
         overflow: hidden; /* For rounded corners on images */
       }
 
       .service-image-wrapper {
         width: 100%;
-        height: 250px;
+        height: 260px; /* Slightly taller */
         overflow: hidden;
       }
 
@@ -89,16 +91,18 @@ export const Services = () => {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        transition: transform 0.6s ease;
+        transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
       }
 
       .service-card:hover {
         transform: translateY(-8px);
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08); /* Stronger lift on hover */
+        box-shadow: 
+           0 20px 40px -10px rgba(0, 0, 0, 0.08),
+           0 12px 20px -12px rgba(0, 0, 0, 0.06); /* Premium float effect */
       }
 
       .service-card:hover .service-image-wrapper img {
-        transform: scale(1.05);
+        transform: scale(1.08);
       }
 
       .service-content {
