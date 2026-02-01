@@ -8,8 +8,8 @@ export const Hero = () => {
             理想の暮らしを、<br>カタチに。
           </h1>
           <p class="hero-subtitle">
-            横浜で創業50年。地域密着のリフォーム・注文住宅。<br>
-            お客様一人ひとりのご要望に誠心誠意お応えします。
+            横浜で創業50年。地域密着のリフォーム・注文住宅。<br class="mobile-only">
+            お客様一人ひとりのご要望に<br class="mobile-only">誠心誠意お応えします。
           </p>
           <div class="hero-cta-wrapper">
              <div class="cta-actions">
@@ -148,9 +148,18 @@ export const Hero = () => {
         .hero-title {
             text-align: center;
             width: 100%;
-            /* Balance letter spacing for true center */
+            font-size: 2rem; /* Smaller font size for mobile to prevent awkward wrap */
             text-indent: 0;
-            letter-spacing: 0.1em;
+            letter-spacing: 0.05em; /* Reduced spacing */
+        }
+        
+        .hero-subtitle {
+           font-size: 0.9rem;
+           line-height: 1.8;
+           width: 90%;
+           margin: 0 auto;
+           word-break: auto-phrase; /* Try to break naturally */
+           display: inline-block;
         }
 
         /* Make scroll indicator slightly higher on mobile to avoid bottom bar */
@@ -158,14 +167,21 @@ export const Hero = () => {
             bottom: 50px; 
         }
 
-        /* Soften the CTA button on mobile */
+        /* Fix Button alignment and contrast */
         .btn-hero {
-            padding: 0.8rem 2.5rem;
+            display: inline-flex !important; /* Force flex */
+            align-items: center;
+            justify-content: center;
+            padding: 1rem 2rem;
             font-size: 1rem;
-            background-color: rgba(0, 0, 0, 0.2); /* More transparent */
-            border-color: rgba(255, 255, 255, 0.6);
-            width: 80%; /* Limit width */
-            max-width: 280px;
+            background-color: rgba(0, 0, 0, 0.6); /* Darker for better contrast */
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            color: #ffffff !important; /* Force white text */
+            width: auto; 
+            min-width: 200px;
+            border-radius: 50px; /* Rounded pill shape */
+            text-indent: 0;
+            gap: 0.5rem;
         }
       }
     </style>
