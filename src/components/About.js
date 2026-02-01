@@ -9,10 +9,9 @@ export const About = () => {
             </div>
           </div>
           <div class="philosophy-content fade-left delay-200">
-            <h3>お客様の想いを第一に。</h3>
+            <h3>家族の笑顔が、生まれる場所。</h3>
             <p>
-              私たちは、お客様の「こうしたい」という想いを<br>
-              何よりも大切にしています。<br>
+              明るい日差し、心地よい風、そして家族の笑い声。<br>
               <br>
               創業以来、地域に根差した工務店として、<br>
               お客様一人ひとりのライフスタイルに合わせた<br>
@@ -111,8 +110,8 @@ export const About = () => {
       .philosophy-content p {
         font-size: 1rem;
         color: var(--color-text-secondary);
-        line-height: 2.4;
-        margin-bottom: 3rem;
+        line-height: 1.8; /* Reduced from 2.4 - looks much more natural */
+        margin-bottom: 1.5rem; /* Reduced from 3rem - tighter spacing */
       }
 
       .achievements {
@@ -130,7 +129,7 @@ export const About = () => {
       }
 
       .achievement-label {
-        font-family: var(--font-serif);
+        font-family: var(--font-heading);
         font-weight: 500;
         font-size: 0.9rem;
         color: var(--color-accent);

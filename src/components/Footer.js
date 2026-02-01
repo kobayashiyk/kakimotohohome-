@@ -4,7 +4,9 @@ export const Footer = () => {
       <div class="container">
         <div class="footer-main fade-in">
           <div class="footer-brand">
-            <a href="/" class="footer-logo-text">柿本ホーム産業</a>
+            <a href="/" class="footer-logo-link">
+              <img src="/logo.avif" alt="柿本ホーム産業" class="footer-logo-img" />
+            </a>
             <p class="footer-tagline">住まいと快適のプロフェッショナル</p>
             <p class="footer-description">
               1965年の創業以来、横浜を中心に<br>
@@ -90,15 +92,16 @@ export const Footer = () => {
         flex: 0 0 300px;
       }
 
-      .footer-logo-text {
-        font-family: var(--font-serif);
-        font-size: 1.8rem;
-        font-weight: 500;
-        letter-spacing: 0.1em;
-        color: var(--color-text-primary);
+      .footer-logo-link {
         display: block;
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
         text-decoration: none;
+      }
+
+      .footer-logo-img {
+        height: 80px; /* Slightly larger in footer */
+        width: auto;
+        display: block;
       }
 
       .footer-tagline {
@@ -170,8 +173,9 @@ export const Footer = () => {
       }
       
       .tel-link a {
-          font-family: var(--font-serif);
-          font-size: 1.2rem;
+          font-family: var(--font-primary);
+          font-size: 1.4rem; /* Slightly larger for emphasis */
+          font-weight: 700;
           color: var(--color-text-primary);
       }
 

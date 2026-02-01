@@ -16,111 +16,55 @@ export const FullGallery = () => {
             <div class="gallery-grid">
                 <div class="gallery-item">
                   <div class="gallery-image">
-                    <img src="/gallery-reform-living.jpg" alt="リビングリフォーム" loading="lazy" />
+                    <img src="/gallery_new/kitchen-01.jpg" alt="キッチンリフォーム" loading="lazy" />
                     <div class="gallery-overlay">
-                      <h4>リビング</h4>
-                      <p>広々としたくつろぎの空間</p>
+                      <h4>システムキッチン</h4>
+                      <p>使い勝手と美しさを両立</p>
                     </div>
                   </div>
                 </div>
                 <div class="gallery-item">
                   <div class="gallery-image">
-                    <img src="/gallery-reform-kitchen.jpg" alt="キッチンリフォーム" loading="lazy" />
-                    <div class="gallery-overlay">
-                      <h4>キッチン</h4>
-                      <p>機能的で美しいシステムキッチン</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="gallery-item">
-                  <div class="gallery-image">
-                    <img src="/gallery-reform-exterior.jpg" alt="外観・外構" loading="lazy" />
-                    <div class="gallery-overlay">
-                      <h4>外観・外構</h4>
-                      <p>和モダンな佇まい</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="gallery-item">
-                  <div class="gallery-image">
-                    <img src="/gallery-reform-bath.jpg" alt="バスルーム" loading="lazy" />
+                    <img src="/gallery_new/bath-01.jpg" alt="バスルーム" loading="lazy" />
                     <div class="gallery-overlay">
                       <h4>バスルーム</h4>
-                      <p>癒しのバスタイムを演出</p>
-                    </div>
-                  </div>
-                </div>
-                <!-- Duplicates 1 -->
-                <div class="gallery-item">
-                  <div class="gallery-image">
-                    <img src="/gallery-reform-living.jpg" alt="リビングリフォーム" loading="lazy" />
-                    <div class="gallery-overlay">
-                      <h4>リビング</h4>
-                      <p>広々としたくつろぎの空間</p>
+                      <p>ゆったりくつろげる空間へ</p>
                     </div>
                   </div>
                 </div>
                 <div class="gallery-item">
                   <div class="gallery-image">
-                    <img src="/gallery-reform-kitchen.jpg" alt="キッチンリフォーム" loading="lazy" />
+                    <img src="/gallery_new/exterior-01.jpg" alt="外構工事" loading="lazy" />
                     <div class="gallery-overlay">
-                      <h4>キッチン</h4>
-                      <p>機能的で美しいシステムキッチン</p>
+                      <h4>外構エクステリア</h4>
+                      <p>家の顔となるアプローチ</p>
                     </div>
                   </div>
                 </div>
                 <div class="gallery-item">
                   <div class="gallery-image">
-                    <img src="/gallery-reform-exterior.jpg" alt="外観・外構" loading="lazy" />
+                    <img src="/gallery_new/deck-01.jpg" alt="ウッドデッキ" loading="lazy" />
                     <div class="gallery-overlay">
-                      <h4>外観・外構</h4>
-                      <p>和モダンな佇まい</p>
+                      <h4>ウッドデッキ</h4>
+                      <p>リビングとつながる開放感</p>
                     </div>
                   </div>
                 </div>
                 <div class="gallery-item">
                   <div class="gallery-image">
-                    <img src="/gallery-reform-bath.jpg" alt="バスルーム" loading="lazy" />
+                    <img src="/gallery_new/reform-living-01.jpg" alt="リビングダイニング" loading="lazy" />
                     <div class="gallery-overlay">
-                      <h4>バスルーム</h4>
-                      <p>癒しのバスタイムを演出</p>
-                    </div>
-                  </div>
-                </div>
-                <!-- Duplicates 2 -->
-                <div class="gallery-item">
-                  <div class="gallery-image">
-                    <img src="/gallery-reform-living.jpg" alt="リビングリフォーム" loading="lazy" />
-                    <div class="gallery-overlay">
-                      <h4>リビング</h4>
-                      <p>広々としたくつろぎの空間</p>
+                      <h4>リビングダイニング</h4>
+                      <p>家族が集う明るい空間</p>
                     </div>
                   </div>
                 </div>
                 <div class="gallery-item">
                   <div class="gallery-image">
-                    <img src="/gallery-reform-kitchen.jpg" alt="キッチンリフォーム" loading="lazy" />
+                    <img src="/gallery_new/reform-living-02.jpg" alt="リビング・内装" loading="lazy" />
                     <div class="gallery-overlay">
-                      <h4>キッチン</h4>
-                      <p>機能的で美しいシステムキッチン</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="gallery-item">
-                  <div class="gallery-image">
-                    <img src="/gallery-reform-exterior.jpg" alt="外観・外構" loading="lazy" />
-                    <div class="gallery-overlay">
-                      <h4>外観・外構</h4>
-                      <p>和モダンな佇まい</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="gallery-item">
-                  <div class="gallery-image">
-                    <img src="/gallery-reform-bath.jpg" alt="バスルーム" loading="lazy" />
-                    <div class="gallery-overlay">
-                      <h4>バスルーム</h4>
-                      <p>癒しのバスタイムを演出</p>
+                      <h4>内装リフォーム</h4>
+                      <p>こだわりを詰め込んだ空間</p>
                     </div>
                   </div>
                 </div>
@@ -132,111 +76,55 @@ export const FullGallery = () => {
             <div class="gallery-grid">
                 <div class="gallery-item">
                   <div class="gallery-image">
-                    <img src="/gallery-steel-garage.jpg" alt="趣味のガレージ" loading="lazy" />
+                    <img src="/gallery_new/steel-01.jpg" alt="軽量鉄骨建築" loading="lazy" />
                     <div class="gallery-overlay">
-                      <h4>趣味のガレージ</h4>
-                      <p>愛車を眺める極上の空間</p>
+                      <h4>軽量鉄骨建築</h4>
+                      <p>耐久性と自由度を兼ね備えた建築</p>
                     </div>
                   </div>
                 </div>
                 <div class="gallery-item">
                   <div class="gallery-image">
-                    <img src="/gallery-steel-warehouse.jpg" alt="法人倉庫" loading="lazy" />
+                    <img src="/gallery_new/steel-02.jpg" alt="事務所倉庫" loading="lazy" />
                     <div class="gallery-overlay">
-                      <h4>法人倉庫</h4>
-                      <p>大空間を実現する鉄骨構造</p>
+                      <h4>事務所倉庫</h4>
+                      <p>機能的なビジネス空間</p>
                     </div>
                   </div>
                 </div>
                 <div class="gallery-item">
                   <div class="gallery-image">
-                    <img src="/gallery-steel-factory.jpg" alt="工場・作業場" loading="lazy" />
+                    <img src="/gallery_new/steel-03.jpg" alt="ガレージ" loading="lazy" />
+                    <div class="gallery-overlay">
+                      <h4>ガレージ</h4>
+                      <p>愛車を守る堅牢な造り</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="gallery-item">
+                  <div class="gallery-image">
+                    <img src="/gallery_new/steel-04.jpg" alt="工場" loading="lazy" />
                     <div class="gallery-overlay">
                       <h4>工場・作業場</h4>
-                      <p>機能性と清潔感を両立</p>
+                      <p>広々とした作業スペース</p>
                     </div>
                   </div>
                 </div>
                 <div class="gallery-item">
                   <div class="gallery-image">
-                    <img src="/gallery-steel-office.jpg" alt="事務所・店舗" loading="lazy" />
+                    <img src="/gallery_new/steel-05.jpg" alt="鉄骨構造" loading="lazy" />
                     <div class="gallery-overlay">
-                      <h4>事務所・店舗</h4>
-                      <p>ビジネスの顔となるデザイン</p>
-                    </div>
-                  </div>
-                </div>
-                <!-- Duplicates 1 -->
-                <div class="gallery-item">
-                  <div class="gallery-image">
-                    <img src="/gallery-steel-garage.jpg" alt="趣味のガレージ" loading="lazy" />
-                    <div class="gallery-overlay">
-                      <h4>趣味のガレージ</h4>
-                      <p>愛車を眺める極上の空間</p>
+                      <h4>鉄骨構造</h4>
+                      <p>安心の耐震性能</p>
                     </div>
                   </div>
                 </div>
                 <div class="gallery-item">
                   <div class="gallery-image">
-                    <img src="/gallery-steel-warehouse.jpg" alt="法人倉庫" loading="lazy" />
+                    <img src="/gallery_new/steel-06.jpg" alt="事業用建物" loading="lazy" />
                     <div class="gallery-overlay">
-                      <h4>法人倉庫</h4>
-                      <p>大空間を実現する鉄骨構造</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="gallery-item">
-                  <div class="gallery-image">
-                    <img src="/gallery-steel-factory.jpg" alt="工場・作業場" loading="lazy" />
-                    <div class="gallery-overlay">
-                      <h4>工場・作業場</h4>
-                      <p>機能性と清潔感を両立</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="gallery-item">
-                  <div class="gallery-image">
-                    <img src="/gallery-steel-office.jpg" alt="事務所・店舗" loading="lazy" />
-                    <div class="gallery-overlay">
-                      <h4>事務所・店舗</h4>
-                      <p>ビジネスの顔となるデザイン</p>
-                    </div>
-                  </div>
-                </div>
-                 <!-- Duplicates 2 -->
-                <div class="gallery-item">
-                  <div class="gallery-image">
-                    <img src="/gallery-steel-garage.jpg" alt="趣味のガレージ" loading="lazy" />
-                    <div class="gallery-overlay">
-                      <h4>趣味のガレージ</h4>
-                      <p>愛車を眺める極上の空間</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="gallery-item">
-                  <div class="gallery-image">
-                    <img src="/gallery-steel-warehouse.jpg" alt="法人倉庫" loading="lazy" />
-                    <div class="gallery-overlay">
-                      <h4>法人倉庫</h4>
-                      <p>大空間を実現する鉄骨構造</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="gallery-item">
-                  <div class="gallery-image">
-                    <img src="/gallery-steel-factory.jpg" alt="工場・作業場" loading="lazy" />
-                    <div class="gallery-overlay">
-                      <h4>工場・作業場</h4>
-                      <p>機能性と清潔感を両立</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="gallery-item">
-                  <div class="gallery-image">
-                    <img src="/gallery-steel-office.jpg" alt="事務所・店舗" loading="lazy" />
-                    <div class="gallery-overlay">
-                      <h4>事務所・店舗</h4>
-                      <p>ビジネスの顔となるデザイン</p>
+                      <h4>事業用建物</h4>
+                      <p>様々な用途に対応</p>
                     </div>
                   </div>
                 </div>

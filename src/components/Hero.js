@@ -69,7 +69,7 @@ export const Hero = () => {
         flex-direction: column;
         align-items: center;
         gap: 10px;
-        font-family: var(--font-serif);
+        font-family: var(--font-primary);
         font-size: 0.9rem;
         letter-spacing: 0.1em;
         animation: fadeUp 1s ease 1s backwards;
@@ -112,73 +112,30 @@ export const Hero = () => {
       }
 
       .hero-title {
-        font-family: var(--font-serif);
-        font-size: clamp(2.5rem, 6vw, 4.5rem); /* Larger, more impactful */
-        font-weight: 500;
-        color: #ffffff; /* Pure white */
+        font-family: var(--font-heading);
+        font-size: clamp(2.5rem, 6vw, 4.5rem);
+        font-weight: 700;
+        color: #ffffff;
         line-height: 1.3;
         letter-spacing: 0.15em;
-        text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Soft shadow for readability */
-      }
-      
-      .hero-title span {
-        display: inline-block;
+        text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
       }
 
       .hero-subtitle {
-        font-family: var(--font-serif);
+        font-family: var(--font-primary);
         font-size: clamp(1rem, 2vw, 1.3rem);
         color: rgba(255, 255, 255, 0.95);
         line-height: 2.2;
         letter-spacing: 0.1em;
         text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
       }
-
-      .hero-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(
-          to bottom, 
-          rgba(0, 0, 0, 0.2), 
-          rgba(0, 0, 0, 0.4)
-        ); /* Darker, gradient overlay for contrast */
-        z-index: 0;
-      }
-
-      .btn-hero {
-        display: inline-block;
-        padding: 1.2rem 4rem;
-        background-color: transparent;
-        color: #fff;
-        font-family: var(--font-serif);
-        font-size: 1.1rem;
-        letter-spacing: 0.2em;
-        border: 1px solid rgba(255, 255, 255, 0.8);
-        border-radius: 2px;
-        transition: all 0.4s ease;
-        margin-top: 1rem;
-        backdrop-filter: blur(4px);
-      }
-
-      .btn-hero:hover {
-        background-color: #fff;
-        color: var(--color-text-primary);
-        border-color: #fff;
-        box-shadow: 0 0 20px rgba(255,255,255,0.3);
-      }
-
-      /* Optimized Ken Burns for Mobile */
-      .hero-bg {
-        /* ... existing props ... */
-        will-change: transform; /* Hint for smoother mobile animation */
-      }
+      
+      /* ... (lines 137-178 unchanged) ... */
 
       @media (max-width: 768px) {
         .hero-cta-wrapper {
-            display: none;
+            display: block; /* Restored CTA on mobile */
+            margin-top: 1.5rem;
         }
 
         .hero-text-wrapper {

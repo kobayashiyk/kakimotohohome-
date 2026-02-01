@@ -6,63 +6,73 @@ export const Gallery = () => {
         
         <div class="gallery-slider fade-up delay-200">
           <div class="gallery-track">
-            <!-- Item 1 -->
+            <!-- Item 1 - Reform -->
             <div class="gallery-item">
               <div class="gallery-image">
-                <img src="/gallery-reform-living.jpg" alt="リビングリフォーム" loading="lazy" />
-                <div class="gallery-overlay">
-                  <h4>リビング</h4>
-                  <p>広々としたくつろぎの空間</p>
-                </div>
-              </div>
-            </div>
-            <!-- Item 2 -->
-            <div class="gallery-item">
-              <div class="gallery-image">
-                <img src="/gallery-reform-kitchen.jpg" alt="キッチンリフォーム" loading="lazy" />
+                <img src="/gallery_new/kitchen-01.jpg" alt="キッチンリフォーム" loading="lazy" />
                 <div class="gallery-overlay">
                   <h4>キッチン</h4>
-                  <p>機能的で美しいシステムキッチン</p>
+                  <p>使い勝手と美しさを両立</p>
                 </div>
               </div>
             </div>
-            <!-- Item 3 -->
+            <!-- Item 2 - Bath -->
             <div class="gallery-item">
               <div class="gallery-image">
-                <img src="/gallery-reform-exterior.jpg" alt="外観・外構" loading="lazy" />
-                <div class="gallery-overlay">
-                  <h4>外観・外構</h4>
-                  <p>和モダンな佇まい</p>
-                </div>
-              </div>
-            </div>
-            <!-- Item 4 -->
-            <div class="gallery-item">
-              <div class="gallery-image">
-                <img src="/gallery-steel-garage.jpg" alt="趣味のガレージ" loading="lazy" />
-                <div class="gallery-overlay">
-                  <h4>趣味のガレージ</h4>
-                  <p>愛車を眺める極上の空間</p>
-                </div>
-              </div>
-            </div>
-             <!-- Item 5 -->
-            <div class="gallery-item">
-              <div class="gallery-image">
-                <img src="/gallery-reform-bath.jpg" alt="バスルーム" loading="lazy" />
+                <img src="/gallery_new/bath-01.jpg" alt="バスルーム" loading="lazy" />
                 <div class="gallery-overlay">
                   <h4>バスルーム</h4>
                   <p>癒しのバスタイムを演出</p>
                 </div>
               </div>
             </div>
-             <!-- Item 6 -->
+             <!-- Item 3 - Exterior -->
             <div class="gallery-item">
               <div class="gallery-image">
-                <img src="/gallery-steel-office.jpg" alt="事務所・店舗" loading="lazy" />
+                <img src="/gallery_new/exterior-01.jpg" alt="外観・外構" loading="lazy" />
                 <div class="gallery-overlay">
-                  <h4>事務所・店舗</h4>
-                  <p>ビジネスの顔となるデザイン</p>
+                  <h4>外構</h4>
+                  <p>家の顔となるアプローチ</p>
+                </div>
+              </div>
+            </div>
+             <!-- Item 4 - Deck -->
+            <div class="gallery-item">
+              <div class="gallery-image">
+                <img src="/gallery_new/deck-01.jpg" alt="ウッドデッキ" loading="lazy" />
+                <div class="gallery-overlay">
+                  <h4>ウッドデッキ</h4>
+                  <p>リビングとつながる開放感</p>
+                </div>
+              </div>
+            </div>
+            <!-- Item 5 - Steel -->
+            <div class="gallery-item">
+              <div class="gallery-image">
+                <img src="/gallery_new/steel-01.jpg" alt="軽量鉄骨建築" loading="lazy" />
+                <div class="gallery-overlay">
+                  <h4>軽量鉄骨建築</h4>
+                  <p>耐久性と自由度を兼ね備えた建築</p>
+                </div>
+              </div>
+            </div>
+            <!-- Item 6 - Living -->
+            <div class="gallery-item">
+              <div class="gallery-image">
+                <img src="/gallery_new/reform-living-01.jpg" alt="リビングリフォーム" loading="lazy" />
+                <div class="gallery-overlay">
+                  <h4>リビング</h4>
+                  <p>家族が集う明るい空間</p>
+                </div>
+              </div>
+            </div>
+            <!-- Item 7 - Garage -->
+            <div class="gallery-item">
+              <div class="gallery-image">
+                <img src="/gallery_new/steel-03.jpg" alt="ガレージ" loading="lazy" />
+                <div class="gallery-overlay">
+                  <h4>ガレージ</h4>
+                  <p>愛車を守る堅牢な造り</p>
                 </div>
               </div>
             </div>
@@ -70,43 +80,16 @@ export const Gallery = () => {
             <!-- Duplicates for Loop -->
             <div class="gallery-item">
               <div class="gallery-image">
-                <img src="/gallery-reform-living.jpg" alt="リビングリフォーム" loading="lazy" />
-                <div class="gallery-overlay">
-                  <h4>リビング</h4>
-                  <p>広々としたくつろぎの空間</p>
-                </div>
-              </div>
-            </div>
-            <div class="gallery-item">
-              <div class="gallery-image">
-                <img src="/gallery-reform-kitchen.jpg" alt="キッチンリフォーム" loading="lazy" />
+                <img src="/gallery_new/kitchen-01.jpg" alt="キッチンリフォーム" loading="lazy" />
                 <div class="gallery-overlay">
                   <h4>キッチン</h4>
-                  <p>機能的で美しいシステムキッチン</p>
+                  <p>使い勝手と美しさを両立</p>
                 </div>
               </div>
             </div>
             <div class="gallery-item">
               <div class="gallery-image">
-                <img src="/gallery-reform-exterior.jpg" alt="外観・外構" loading="lazy" />
-                <div class="gallery-overlay">
-                  <h4>外観・外構</h4>
-                  <p>和モダンな佇まい</p>
-                </div>
-              </div>
-            </div>
-            <div class="gallery-item">
-              <div class="gallery-image">
-                <img src="/gallery-steel-garage.jpg" alt="趣味のガレージ" loading="lazy" />
-                <div class="gallery-overlay">
-                  <h4>趣味のガレージ</h4>
-                  <p>愛車を眺める極上の空間</p>
-                </div>
-              </div>
-            </div>
-            <div class="gallery-item">
-              <div class="gallery-image">
-                <img src="/gallery-reform-bath.jpg" alt="バスルーム" loading="lazy" />
+                <img src="/gallery_new/bath-01.jpg" alt="バスルーム" loading="lazy" />
                 <div class="gallery-overlay">
                   <h4>バスルーム</h4>
                   <p>癒しのバスタイムを演出</p>
@@ -115,10 +98,46 @@ export const Gallery = () => {
             </div>
             <div class="gallery-item">
               <div class="gallery-image">
-                <img src="/gallery-steel-office.jpg" alt="事務所・店舗" loading="lazy" />
+                <img src="/gallery_new/exterior-01.jpg" alt="外観・外構" loading="lazy" />
                 <div class="gallery-overlay">
-                  <h4>事務所・店舗</h4>
-                  <p>ビジネスの顔となるデザイン</p>
+                  <h4>外構</h4>
+                  <p>家の顔となるアプローチ</p>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <div class="gallery-image">
+                <img src="/gallery_new/deck-01.jpg" alt="ウッドデッキ" loading="lazy" />
+                <div class="gallery-overlay">
+                  <h4>ウッドデッキ</h4>
+                  <p>リビングとつながる開放感</p>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <div class="gallery-image">
+                <img src="/gallery_new/steel-01.jpg" alt="軽量鉄骨建築" loading="lazy" />
+                <div class="gallery-overlay">
+                  <h4>軽量鉄骨建築</h4>
+                  <p>耐久性と自由度を兼ね備えた建築</p>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <div class="gallery-image">
+                <img src="/gallery_new/reform-living-01.jpg" alt="リビングリフォーム" loading="lazy" />
+                <div class="gallery-overlay">
+                  <h4>リビング</h4>
+                  <p>家族が集う明るい空間</p>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <div class="gallery-image">
+                <img src="/gallery_new/steel-03.jpg" alt="ガレージ" loading="lazy" />
+                <div class="gallery-overlay">
+                  <h4>ガレージ</h4>
+                  <p>愛車を守る堅牢な造り</p>
                 </div>
               </div>
             </div>

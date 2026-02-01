@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Large files and temp directories
+*.zip
+public/temp_site_images/

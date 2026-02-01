@@ -72,8 +72,11 @@ export const Services = () => {
         display: flex;
         flex-direction: column;
         height: 100%;
-        border: 1px solid var(--color-border);
-        transition: transform 0.4s ease;
+        border: none; /* Removed border */
+        border-radius: 12px; /* Modern rounded corners */
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Soft baseline shadow */
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+        overflow: hidden; /* For rounded corners on images */
       }
 
       .service-image-wrapper {
@@ -90,8 +93,8 @@ export const Services = () => {
       }
 
       .service-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        transform: translateY(-8px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08); /* Stronger lift on hover */
       }
 
       .service-card:hover .service-image-wrapper img {
@@ -107,12 +110,12 @@ export const Services = () => {
 
       .service-title {
         font-size: 1.4rem;
-        margin-bottom: 1.5rem;
-        font-weight: 500;
-        letter-spacing: 0.1em;
-        text-align: center;
-        border-bottom: 1px solid var(--color-border);
-        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        text-align: left; /* Modern clean left align */
+        border-bottom: none; /* Remove border */
+        padding-bottom: 0;
       }
 
       .service-items {
@@ -121,22 +124,23 @@ export const Services = () => {
         display: flex;
         flex-wrap: wrap;
         gap: 0.5rem;
-        justify-content: center;
+        justify-content: flex-start; /* Left align to match title */
       }
 
       .service-items li {
-        font-size: 0.9rem;
-        color: var(--color-text-secondary);
-        background-color: var(--color-bg-secondary);
-        padding: 0.2rem 0.8rem;
-        border-radius: 2px;
+        font-size: 0.85rem;
+        color: var(--color-accent); /* Use accent color for tags */
+        background-color: rgba(243, 156, 18, 0.1); /* Soft orange accent bg */
+        padding: 0.3rem 1rem;
+        border-radius: 50px; /* Pill shape */
+        font-weight: 500;
       }
 
       .service-desc {
         font-size: 0.95rem;
         color: var(--color-text-secondary);
         line-height: 1.8;
-        text-align: justify;
+        text-align: left; /* Left align for readability */
         margin-top: auto;
       }
       
@@ -157,7 +161,17 @@ export const Services = () => {
       @media (max-width: 900px) {
         .services-grid {
           grid-template-columns: 1fr;
-          gap: 4rem;
+          gap: 2.5rem; /* Tighter gap for mobile */
+        }
+        
+        .btn-primary {
+          width: 100%; /* Full width button on mobile */
+          padding: 1rem;
+          text-align: center;
+        }
+        
+        .service-content {
+          padding: 1.5rem; /* Reduce padding on mobile cards */
         }
       }
     </style>

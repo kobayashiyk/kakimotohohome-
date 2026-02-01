@@ -3,7 +3,7 @@ export const Header = () => {
     <header class="header">
       <div class="header-container">
         <a href="/" class="logo">
-          <span class="logo-text">柿本ホーム産業</span>
+          <img src="/logo.avif" alt="柿本ホーム産業" class="logo-img" />
         </a>
         
         <button class="mobile-menu-toggle" aria-label="メニューを開く">
@@ -31,14 +31,14 @@ export const Header = () => {
         left: 0;
         width: 100%;
         z-index: 100;
-        background-color: rgba(252, 250, 245, 0.95); /* Match bg-dark with opacity */
+        background-color: rgba(255, 255, 255, 0.95); /* Pure White */
         border-bottom: 1px solid var(--color-border);
         padding: 1.5rem 0;
         transition: all 0.3s ease;
       }
 
       .header-container {
-        max-width: 1200px;
+        max-width: 1280px; /* Match global container */
         margin: 0 auto;
         padding: 0 1.5rem; /* Adjusted mobile padding */
         display: flex;
@@ -53,11 +53,20 @@ export const Header = () => {
         gap: 1rem;
       }
 
-      .logo-text {
-        font-size: 1.4rem;
-        font-weight: 500;
-        letter-spacing: 0.1em;
-        color: var(--color-text-primary);
+      .logo-img {
+        height: 60px;
+        width: auto;
+        display: block;
+      }
+      
+      @media (max-width: 768px) {
+        .logo-img {
+          height: 45px; /* Smaller logo on mobile */
+        }
+        
+        .header-container {
+          padding: 0 1.25rem; /* Match global mobile padding */
+        }
       }
 
       .nav-list {
@@ -68,7 +77,7 @@ export const Header = () => {
 
       .nav-link {
         font-size: 0.95rem;
-        letter-spacing: 0.1em;
+        letter-spacing: 0.05em;
         color: var(--color-text-primary);
         position: relative;
         padding-bottom: 0.5rem;
@@ -93,8 +102,9 @@ export const Header = () => {
         background-color: var(--color-text-primary);
         color: #fff;
         padding: 0.8rem 1.5rem;
-        border-radius: 2px;
+        border-radius: 50px; /* Modern Pill Shape */
         transition: background-color 0.3s ease;
+        font-weight: 500;
       }
       
       .btn-header:hover {

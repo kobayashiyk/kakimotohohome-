@@ -41,7 +41,7 @@ export const StickyFooter = () => {
         padding: 10px 0;
         border-radius: 2px; /* Sharper corners for premium feel */
         text-decoration: none;
-        font-family: var(--font-serif); /* Serif font */
+        font-family: var(--font-primary); /* Modern Sans */
         font-weight: 500;
         transition: all 0.3s;
         gap: 8px; /* Gap between icon and text */

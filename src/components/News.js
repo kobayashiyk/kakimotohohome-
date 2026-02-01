@@ -7,54 +7,59 @@ export const News = () => {
         <div class="news-container fade-up delay-100">
           <div class="news-list">
             
-            <a href="/gallery.html" class="news-item">
+            <a href="/gallery.html#reform" class="news-item">
               <div class="news-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <polyline points="20 6 9 17 4 12"></polyline>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
                 </svg>
               </div>
-              <div class="news-date">2025/--/--</div>
-              <div class="news-title">新着施工事例のタイトルが入ります</div>
+              <div class="news-date">2025/01/20</div>
+              <div class="news-title">【リフォーム】システムキッチン改修工事の施工事例を追加しました</div>
             </a>
 
-            <a href="/gallery.html" class="news-item">
+            <a href="/gallery.html#reform" class="news-item">
               <div class="news-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <polyline points="20 6 9 17 4 12"></polyline>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
                 </svg>
               </div>
-              <div class="news-date">2025/--/--</div>
-              <div class="news-title">新着施工事例のタイトルが入ります</div>
+              <div class="news-date">2025/01/15</div>
+              <div class="news-title">【リフォーム】バスルーム改修工事の施工事例を追加しました</div>
             </a>
 
-            <a href="/gallery.html" class="news-item">
+            <a href="/gallery.html#reform" class="news-item">
               <div class="news-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <polyline points="20 6 9 17 4 12"></polyline>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
                 </svg>
               </div>
-              <div class="news-date">2025/--/--</div>
-              <div class="news-title">新着施工事例のタイトルが入ります</div>
+              <div class="news-date">2024/12/28</div>
+              <div class="news-title">【エクステリア】外構フェンス工事の施工事例を追加しました</div>
             </a>
 
-            <a href="/gallery.html" class="news-item">
+            <a href="/gallery.html#steel" class="news-item">
               <div class="news-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <polyline points="20 6 9 17 4 12"></polyline>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
                 </svg>
               </div>
-              <div class="news-date">2025/--/--</div>
-              <div class="news-title">新着施工事例のタイトルが入ります</div>
+              <div class="news-date">2024/12/10</div>
+              <div class="news-title">【軽量鉄骨】事業用倉庫の施工事例を追加しました</div>
             </a>
-
-            <a href="/gallery.html" class="news-item">
+            
+            <a href="/gallery.html#steel" class="news-item">
               <div class="news-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <polyline points="20 6 9 17 4 12"></polyline>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
                 </svg>
               </div>
-              <div class="news-date">2025/--/--</div>
-              <div class="news-title">新着施工事例のタイトルが入ります</div>
+              <div class="news-date">2024/11/30</div>
+              <div class="news-title">【軽量鉄骨】ガレージ建築の施工事例を追加しました</div>
             </a>
 
           </div>
@@ -68,19 +73,19 @@ export const News = () => {
       }
 
       .news-container {
-        max-width: 900px;
+        max-width: 1000px;
         margin: 0 auto;
         background: var(--color-bg-white);
-        border: 1px solid var(--color-border);
-        border-radius: 4px;
-        padding: 2rem;
+        border: none;
+        border-radius: 12px;
+        padding: 3rem;
         box-shadow: 0 4px 20px rgba(0,0,0,0.03);
       }
 
       .news-item {
         display: flex;
         align-items: center;
-        padding: 1.2rem 0;
+        padding: 1.5rem 0;
         border-bottom: 1px dotted var(--color-border);
         transition: all 0.3s ease;
         text-decoration: none;
@@ -95,31 +100,35 @@ export const News = () => {
         background-color: var(--color-bg-secondary);
         padding-left: 1rem;
         transform: translateX(5px);
+        border-radius: 4px;
       }
 
       .news-icon {
-        color: #f5a623; /* Orange check color */
+        color: var(--color-accent); /* Updated to brand accent */
         margin-right: 1.5rem;
         display: flex;
         align-items: center;
       }
 
       .news-date {
-        font-family: var(--font-sans);
-        color: var(--color-text-primary);
+        font-family: var(--font-primary);
+        color: var(--color-text-secondary);
         margin-right: 2rem;
         font-weight: 500;
         min-width: 100px;
+        font-size: 0.9rem;
       }
 
       .news-title {
-        color: #4a90e2; /* Similar blue to reference */
+        color: var(--color-text-primary); /* Modern dark text */
         font-weight: 500;
         flex-grow: 1;
+        transition: color 0.3s ease;
       }
 
       .news-item:hover .news-title {
-        text-decoration: underline;
+        color: var(--color-accent); /* Highlight on hover */
+        text-decoration: none;
       }
 
       @media (max-width: 768px) {
