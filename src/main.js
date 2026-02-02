@@ -1,20 +1,21 @@
-import './style.css'
-import { Header } from './components/Header.js'
-import { Hero } from './components/Hero.js'
-import { About } from './components/About.js'
-import { Services } from './components/Services.js'
-import { Gallery } from './components/Gallery.js'
-import { News } from './components/News.js'
-import { Company } from './components/Company.js'
-import { Contact } from './components/Contact.js'
-import { Footer } from './components/Footer.js'
-import { Loader } from './components/Loader.js'
-import { Reviews } from './components/Reviews.js'
-import { CeoMessage } from './components/CeoMessage.js'
-import { Facilities } from './components/Facilities.js'
-import { StickyFooter } from './components/StickyFooter.js'
-import { CtaSection } from './components/CtaSection.js'
+import './style.css';
+import { Header } from './components/Header.js';
+import { Hero, initHeroAnimation } from './components/Hero.js';
+import { About } from './components/About.js';
+import { Services } from './components/Services.js';
+import { Gallery } from './components/Gallery.js';
+import { News } from './components/News.js';
+import { Company } from './components/Company.js';
+import { Contact } from './components/Contact.js';
+import { Footer } from './components/Footer.js';
+import { Loader } from './components/Loader.js';
+import { Reviews } from './components/Reviews.js';
+import { CeoMessage } from './components/CeoMessage.js';
+import { Facilities } from './components/Facilities.js';
+import { StickyFooter } from './components/StickyFooter.js';
+import { CtaSection } from './components/CtaSection.js';
 
+// Render App
 document.querySelector('#app').innerHTML = `
   ${Loader()}
   ${Header()}
@@ -33,7 +34,10 @@ document.querySelector('#app').innerHTML = `
   </main>
   ${Footer()}
   ${StickyFooter()}
-`
+`;
+
+// Initialize Hero Animation
+setTimeout(initHeroAnimation, 100);
 
 // Mobile Menu Logic
 const menuToggle = document.querySelector('.mobile-menu-toggle');
@@ -113,7 +117,6 @@ document.querySelectorAll('.fade-in, .fade-up, .fade-left, .fade-right, .zoom-in
   observer.observe(el);
 });
 
-// Loading Screen Logic
 // Loading Screen Logic
 const removeLoader = () => {
   const loader = document.getElementById('loader');
