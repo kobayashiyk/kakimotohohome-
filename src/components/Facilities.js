@@ -40,7 +40,7 @@ export const Facilities = () => {
         <!-- Factory Section -->
         <div class="facility-item fade-up delay-200">
           <div class="facility-image-wrapper">
-            <img src="/自社工場/4CCA2A5E-B2BF-4AB0-899B-2A9FAA6B0949.jpg" alt="自社工場" />
+            <img src="/自社工場/factory_new.jpg" alt="自社工場" />
           </div>
           <div class="facility-content">
             <h3 class="facility-title">自社工場完備</h3>

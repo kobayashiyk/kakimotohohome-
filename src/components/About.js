@@ -31,6 +31,11 @@ export const About = () => {
                 <span class="achievement-label">受賞歴</span>
                 <span class="achievement-text">ホームプロ利用者満足度 優良会社表彰</span>
               </div>
+              <div class="achievement-link-container fade-up delay-500">
+                <a href="https://www.homepro.jp/kaisha/325246/" target="_blank" rel="noopener noreferrer" class="homepro-link">
+                  ホームプロでの評価を見る <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -204,6 +209,58 @@ export const About = () => {
         .achievement-text {
             text-align: left; /* Explicitly align text left */
         }
+
+        .achievement-link-container {
+            padding-left: 0; /* Reset alignment on mobile */
+            margin-top: 0.5rem;
+        }
+      }
+      
+      .achievement-link-container {
+        padding-left: calc(140px + 1.5rem); /* Align with text */
+        margin-top: 1rem; /* Added improved spacing */
+      }
+      
+      .homepro-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        padding: 0.8rem 1.8rem;
+        background-color: var(--color-accent); /* Solid background initially */
+        border: 1px solid var(--color-accent);
+        color: white; /* White text for contrast */
+        font-size: 0.95rem;
+        font-weight: 500;
+        letter-spacing: 0.05em;
+        text-decoration: none;
+        transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        border-radius: 4px; /* Slight rounded corners for button feel */
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+      }
+      
+      .homepro-link::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: white; /* Hover fill color */
+        transition: width 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        z-index: -1;
+      }
+      
+      .homepro-link:hover {
+        color: var(--color-accent); /* Text becomes accent color on hover */
+        transform: translateY(-2px);
+        box-shadow: 0 4px 15px rgba(216, 141, 45, 0.3);
+      }
+
+      .homepro-link:hover::before {
+        width: 100%;
       }
     </style>
   `;

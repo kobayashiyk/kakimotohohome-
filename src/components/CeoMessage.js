@@ -104,9 +104,11 @@ export const CeoMessage = () => {
       }
 
       .ceo-name {
-        font-size: 1.8rem;
+        font-family: 'Yuji Syuku', serif;
+        font-size: 2.2rem; /* Increased size for the handwritten style */
         font-weight: 500;
-        letter-spacing: 0.2em;
+        letter-spacing: 0.15em;
+        margin-top: 0.5rem;
       }
 
       @media (max-width: 900px) {

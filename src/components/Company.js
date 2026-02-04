@@ -62,7 +62,7 @@ export const Company = () => {
             </div>
             <div class="overview-item">
               <dt>取引先銀行</dt>
-              <dd>ＵＦＪ銀行　みずほ銀行　世田谷信用金庫</dd>
+              <dd>三菱UFJ銀行　みずほ銀行　世田谷信用金庫</dd>
             </div>
             <div class="overview-item">
               <dt>許認可</dt>
