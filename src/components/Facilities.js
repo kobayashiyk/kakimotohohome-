@@ -2,43 +2,10 @@ export const Facilities = () => {
   return `
     <section id="facilities" class="section facilities">
       <div class="container">
-        <h2 class="section-title fade-up">当社の強み</h2>
+        <h2 class="section-title fade-up">自社のご紹介</h2>
         
-        <!-- 50 Years History Section -->
-        <div class="facility-item fade-up">
-          <div class="facility-image-wrapper">
-            <img src="/strength-history.png" alt="横浜で50年以上の実績" />
-          </div>
-          <div class="facility-content">
-            <h3 class="facility-title">横浜で50年以上の実績</h3>
-            <p class="facility-desc">
-              昭和48年の創業以来、横浜エリアを中心に地域密着で歩んでまいりました。<br>
-              親子二代、三代にわたってご依頼いただくお客様も多く、地域の皆様との信頼関係こそが私たちの最大の財産です。<br>
-              土地の特性や気候風土を知り尽くしているからこそできる、長く安心して住み続けられる住まいづくりをご提案いたします。<br>
-              これからも「街の頼れる工務店」として、お客様の暮らしに寄り添い続けてまいります。
-            </p>
-          </div>
-        </div>
-
-        <!-- Awards Section -->
-        <div class="facility-item facility-reverse fade-up delay-200">
-          <div class="facility-image-wrapper">
-            <img src="/awards.jpg" alt="ホームプロ受賞多数" />
-          </div>
-          <div class="facility-content">
-            <h3 class="facility-title">ホームプロ受賞多数</h3>
-            <p class="facility-desc">
-              利用者数No.1のリフォーム会社紹介サイト「ホームプロ」において、数々の賞を受賞しております。<br>
-              これは、施工品質はもちろんのこと、お客様への対応や提案力、アフターフォローに至るまで、<br>
-              総合的に高い評価をいただいた証です。<br>
-              第三者機関による客観的な評価に加え、実際に施工されたお客様からの「ありがとう」の声を励みに、<br>
-              さらなる品質向上に努めてまいります。
-            </p>
-          </div>
-        </div>
-
         <!-- Factory Section -->
-        <div class="facility-item fade-up delay-200">
+        <div class="facility-item fade-up">
           <div class="facility-image-wrapper">
             <img src="/自社工場/factory_new.jpg" alt="自社工場" />
           </div>

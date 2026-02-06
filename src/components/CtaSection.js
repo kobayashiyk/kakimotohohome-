@@ -28,17 +28,18 @@ export const CtaSection = () => {
         }
   
         .cta-title {
-          font-family: var(--font-serif);
-          font-size: 1.8rem;
+          font-family: var(--font-heading);
+          font-size: 2rem;
           color: var(--color-text-primary);
           margin-bottom: 2rem;
           line-height: 1.6;
+          font-weight: 700;
         }
   
         .cta-desc {
           color: var(--color-text-secondary);
           line-height: 2.0;
-          font-size: 1rem;
+          font-size: 1.1rem;
           margin-bottom: 1rem;
         }
   
@@ -53,32 +54,34 @@ export const CtaSection = () => {
           display: flex;
           align-items: center;
           justify-content: center;
-          padding: 1.2rem 2.5rem; /* Wider padding */
+          padding: 1.5rem 3rem; /* Larger padding for easier tapping */
           text-decoration: none;
-          font-family: var(--font-serif); /* Serif font */
-          font-weight: 500;
-          font-size: 1.1rem;
-          border-radius: 2px; /* Sharper corners */
+          font-family: var(--font-primary);
+          font-weight: 700;
+          font-size: 1.3rem; /* Larger font for visibility */
+          border-radius: 4px;
           transition: all 0.3s ease;
           gap: 1rem;
-          letter-spacing: 0.1em; /* Spacing */
+          letter-spacing: 0.08em;
         }
   
         .cta-btn-tel {
-          background-color: #fff;
-          border: 1px solid var(--color-text-primary); /* Thin border */
-          color: var(--color-text-primary);
+          background-color: var(--color-text-primary);
+          border: 2px solid var(--color-text-primary);
+          color: #fff;
+          font-size: 1.5rem; /* Extra large for phone number */
+          padding: 1.8rem 3.5rem;
         }
   
         .cta-btn-tel:hover {
-          background-color: var(--color-text-primary);
-          color: #fff;
+          background-color: #fff;
+          color: var(--color-text-primary);
         }
   
         .cta-btn-mail {
           background-color: var(--color-accent);
           color: #fff;
-          border: 1px solid var(--color-accent); /* Thin border */
+          border: 2px solid var(--color-accent);
         }
   
         .cta-btn-mail:hover {
@@ -87,8 +90,8 @@ export const CtaSection = () => {
         }
   
         .cta-icon {
-          width: 20px;
-          height: 20px;
+          width: 24px;
+          height: 24px;
         }
   
         @media (max-width: 768px) {

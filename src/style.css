@@ -50,8 +50,10 @@ body {
   font-family: var(--font-primary);
   background-color: var(--color-bg-dark);
   color: var(--color-text-primary);
-  line-height: 1.8;
-  /* Slightly tighter for better readability */
+  line-height: 2;
+  /* Increased for better readability for seniors */
+  font-size: 17px;
+  /* Larger base font for 50+ audience */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
@@ -143,9 +145,9 @@ img {
   }
 
   body {
-    font-size: 15px;
-    /* Improved readability */
-    line-height: 1.75;
+    font-size: 16px;
+    /* Larger mobile font for 50+ audience */
+    line-height: 1.9;
   }
 
   .section-title {

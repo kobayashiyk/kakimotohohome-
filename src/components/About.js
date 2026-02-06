@@ -1,41 +1,57 @@
 export const About = () => {
-  return `
+    return `
     <section id="philosophy" class="section philosophy">
       <div class="container">
-        <div class="philosophy-layout">
-          <div class="philosophy-visual reveal-image">
-            <div class="philosophy-image-container">
-              <img src="/about-image.png" alt="Philosophy Visual" />
+        <!-- Section 1: 50 Years -->
+        <div class="strength-row fade-up">
+          <div class="strength-visual">
+             <div class="image-container">
+               <img src="/about-image.png" alt="職人の手元" />
+             </div>
+          </div>
+          <div class="strength-content">
+            <h3 class="strength-title">横浜で50年以上の実績</h3>
+            <div class="strength-text">
+              <p>
+                昭和48年の創業以来、横浜エリアを中心に地域密着で歩んでまいりました。
+              </p>
+              <p>
+                親子二代、三代にわたってご依頼いただくお客様も多く、地域の皆様との信頼関係こそが私たちの最大の財産です。
+              </p>
+              <p>
+                土地の特性や気候風土を知り尽くしているからこそできる、長く安心して住み続けられる住まいづくりをご提案いたします。
+              </p>
+              <p>
+                これからも「街の頼れる工務店」として、お客様の暮らしに寄り添い続けてまいります。
+              </p>
             </div>
           </div>
-          <div class="philosophy-content fade-left delay-200">
-            <h3>家族の笑顔が、生まれる場所。</h3>
-            <p>
-              明るい日差し、心地よい風、そして家族の笑い声。<br>
-              <br>
-              創業以来、地域に根差した工務店として、<br>
-              お客様一人ひとりのライフスタイルに合わせた<br>
-              快適な住まいづくりをご提案してきました。<br>
-              <br>
-              小さな修繕から大規模なリフォームまで、<br>
-              どんなことでもお気軽にご相談ください。<br>
-              プロの技術で、お客様の理想を形にします。
-            </p>
-            
-            <div class="achievements">
-              <div class="achievement-item fade-up delay-300">
-                <span class="achievement-label">創業50年</span>
-                <span class="achievement-text">横浜で50年以上の実績</span>
-              </div>
-              <div class="achievement-item fade-up delay-400">
-                <span class="achievement-label">受賞歴</span>
-                <span class="achievement-text">ホームプロ利用者満足度 優良会社表彰</span>
-              </div>
-              <div class="achievement-link-container fade-up delay-500">
-                <a href="https://www.homepro.jp/kaisha/325246/" target="_blank" rel="noopener noreferrer" class="homepro-link">
-                  ホームプロでの評価を見る <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                </a>
-              </div>
+        </div>
+
+        <!-- Section 2: Home Pro Awards -->
+        <div class="strength-row reverse fade-up delay-200">
+           <div class="strength-visual">
+             <div class="image-container">
+               <img src="/awards.jpg" alt="ホームプロ表彰盾" />
+             </div>
+          </div>
+          <div class="strength-content">
+            <h3 class="strength-title">ホームプロ受賞多数</h3>
+            <div class="strength-text">
+              <p>
+                利用者数No.1のリフォーム会社紹介サイト「ホームプロ」において、数々の賞を受賞しております。
+              </p>
+              <p>
+                これは、施工品質はもちろんのこと、お客様への対応や提案力、アフターフォローに至るまで、総合的に高い評価をいただいた証です。
+              </p>
+              <p>
+                第三者機関による客観的な評価に加え、実際に施工されたお客様からの「ありがとう」の声を励みに、さらなる品質向上に努めてまいります。
+              </p>
+            </div>
+            <div class="strength-link-wrapper">
+              <a href="https://www.homepro.jp/kaisha/325246/" target="_blank" rel="noopener noreferrer" class="homepro-link">
+                ホームプロでの評価を見る <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
             </div>
           </div>
         </div>
@@ -44,223 +60,126 @@ export const About = () => {
     <style>
       .philosophy {
         padding: var(--spacing-xl) 0;
-        background-color: var(--color-bg-warm); /* Subtle warmth */
+        background-color: var(--color-bg-white);
       }
 
-      .philosophy-layout {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: var(--spacing-lg);
+      .strength-row {
+        display: flex;
         align-items: center;
+        gap: 4rem;
+        margin-bottom: 6rem;
+      }
+      
+      .strength-row:last-child {
+        margin-bottom: 0;
       }
 
-      .philosophy-visual {
-        position: relative;
-        height: 600px;
+      .strength-row.reverse {
+        flex-direction: row-reverse;
       }
 
-      .philosophy-image-container {
+      .strength-visual {
+        flex: 1;
+      }
+      
+      .image-container {
         width: 100%;
-        height: 100%;
+        height: 400px; /* Established height */
         overflow: hidden;
         border-radius: 2px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.08);
       }
-
-      .philosophy-visual img {
+      
+      .image-container img {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        transition: transform 1s ease;
-        display: block;
+        transition: transform 0.6s ease;
       }
       
-      .philosophy-visual:hover img {
-        transform: scale(1.05);
+      .strength-row:hover .image-container img {
+        transform: scale(1.03);
       }
 
-      .philosophy-title-overlay {
-        position: absolute;
-        bottom: 3rem;
-        right: -3rem;
-        background-color: var(--color-bg-white);
-        padding: 3rem 5rem;
-        box-shadow: 
-          0 8px 24px rgba(0, 0, 0, 0.06),
-          0 16px 48px rgba(0, 0, 0, 0.04);
-        border: 1px solid var(--color-border);
-        min-width: 450px;
+      .strength-content {
+        flex: 1;
+        padding-left: 1rem;
+      }
+      
+      .strength-row.reverse .strength-content {
+        padding-left: 0;
+        padding-right: 1rem;
       }
 
-      .philosophy-title-overlay .section-title {
-        margin-bottom: 0;
-        text-align: right;
-        white-space: nowrap;
-        overflow: visible;
-        font-size: 3rem;
+      .strength-title {
+        font-size: 1.8rem;
         font-weight: 500;
-        letter-spacing: 0.15em;
-      }
-
-      .philosophy-content {
-        padding-left: var(--spacing-md);
-      }
-
-      .philosophy-content h3 {
-        font-size: 2rem;
-        margin-bottom: var(--spacing-md);
-        color: var(--color-text-primary);
-        font-weight: 500;
-      }
-
-      .philosophy-content p {
-        font-size: 1rem;
-        color: var(--color-text-secondary);
-        line-height: 1.8; /* Reduced from 2.4 - looks much more natural */
-        margin-bottom: 1.5rem; /* Reduced from 3rem - tighter spacing */
-      }
-
-      .achievements {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-        border-top: 1px solid rgba(0,0,0,0.1);
-        padding-top: 2rem;
-      }
-
-      .achievement-item {
-        display: flex;
-        align-items: center;
-        gap: 1.5rem;
-      }
-
-      .achievement-label {
-        font-family: var(--font-heading);
-        font-weight: 500;
-        font-size: 0.9rem;
-        color: var(--color-accent);
         letter-spacing: 0.1em;
-        border: 1px solid var(--color-accent);
-        padding: 0.6rem 1rem; /* Slightly more padding */
-        min-width: 140px; /* Increased min-width to hold text better */
-        text-align: center;
-        flex-shrink: 0; /* Prevent shrinking */
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+        border-bottom: 3px solid var(--color-accent);
+        display: inline-block;
+        color: var(--color-text-primary);
       }
 
-      @media (max-width: 768px) {
-        .philosophy-layout {
-          grid-template-columns: 1fr;
-          gap: 0;
-        }
-
-        .philosophy-visual {
-          height: auto;
-          display: flex;
-          flex-direction: column;
-        }
-        
-        .philosophy-image-container {
-            height: 300px;
-        }
-
-        .philosophy-title-overlay {
-          position: relative; /* layout normally */
-          right: auto;
-          bottom: auto;
-          width: 100%;
-          text-align: center;
-          background-color: var(--color-bg-white);
-          padding: 2rem 1rem;
-          box-shadow: none;
-          min-width: auto;
-          margin-top: -2rem; /* Slight overlap upwards */
-          z-index: 2;
-        }
-        
-        .philosophy-title-overlay .section-title {
-          text-align: center;
-          font-size: 1.8rem;
-          margin-bottom: 0;
-        }
-
-        .philosophy-content {
-          padding-left: 0;
-          text-align: center;
-          padding-top: 1rem;
-          padding: 1rem;
-        }
-        
-        .philosophy-content p {
-            text-align: justify;
-        }
-
-        .achievements {
-          align-items: flex-start; /* Align inner items to left */
-          width: fit-content; /* Shrink to content width */
-          margin: 0 auto; /* Center the container */
-          text-align: left; /* Ensure text inside is left-aligned */
-          border-top: 1px solid rgba(0,0,0,0.1); /* Ensure border stays */
-          padding-top: 2rem;
-        }
-
-        .achievement-item {
-            width: 100%; /* Ensure it spans the container's width */
-        }
-
-        .achievement-text {
-            text-align: left; /* Explicitly align text left */
-        }
-
-        .achievement-link-container {
-            padding-left: 0; /* Reset alignment on mobile */
-            margin-top: 0.5rem;
-        }
+      .strength-text p {
+        font-size: 1rem;
+        line-height: 2;
+        color: var(--color-text-secondary);
+        margin-bottom: 1.5rem;
+        text-align: justify;
       }
       
-      .achievement-link-container {
-        padding-left: calc(140px + 1.5rem); /* Align with text */
-        margin-top: 1rem; /* Added improved spacing */
+      .strength-link-wrapper {
+        margin-top: 2rem;
       }
       
       .homepro-link {
         display: inline-flex;
         align-items: center;
         gap: 0.6rem;
-        padding: 0.8rem 1.8rem;
-        background-color: var(--color-accent); /* Solid background initially */
-        border: 1px solid var(--color-accent);
-        color: white; /* White text for contrast */
-        font-size: 0.95rem;
-        font-weight: 500;
+        padding: 1rem 2rem;
+        background-color: var(--color-accent);
+        color: white;
+        font-weight: 700;
         letter-spacing: 0.05em;
         text-decoration: none;
-        transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-        position: relative;
-        overflow: hidden;
-        z-index: 1;
-        border-radius: 4px; /* Slight rounded corners for button feel */
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Subtle shadow for depth */
-      }
-      
-      .homepro-link::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 0%;
-        height: 100%;
-        background-color: white; /* Hover fill color */
-        transition: width 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-        z-index: -1;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 10px rgba(216, 141, 45, 0.3);
       }
       
       .homepro-link:hover {
-        color: var(--color-accent); /* Text becomes accent color on hover */
+        background-color: #c27a1f;
         transform: translateY(-2px);
-        box-shadow: 0 4px 15px rgba(216, 141, 45, 0.3);
+        box-shadow: 0 6px 15px rgba(216, 141, 45, 0.4);
       }
 
-      .homepro-link:hover::before {
-        width: 100%;
+      @media (max-width: 900px) {
+        .strength-row {
+          flex-direction: column;
+          gap: 2rem;
+          margin-bottom: 5rem;
+        }
+        
+        .strength-row.reverse {
+          flex-direction: column;
+        }
+        
+        .image-container {
+            height: 300px;
+        }
+        
+        .strength-content, 
+        .strength-row.reverse .strength-content {
+          padding: 0;
+        }
+        
+        .strength-title {
+            width: 100%; /* Border underlines full width on mobile optional */
+             font-size: 1.5rem;
+             margin-bottom: 1.5rem;
+        }
       }
     </style>
   `;

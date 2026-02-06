@@ -17,15 +17,14 @@ import { CtaSection } from './components/CtaSection.js';
 
 // Render App
 document.querySelector('#app').innerHTML = `
-  ${Loader()}
   ${Header()}
   <main>
     ${Hero()}
+    ${Gallery()}
     ${About()}
     ${CtaSection()}
     ${Services()}
     ${Facilities()}
-    ${Gallery()}
     ${News()}
     ${Reviews()}
     ${CeoMessage()}
@@ -116,28 +115,6 @@ const observer = new IntersectionObserver((entries, observer) => {
 document.querySelectorAll('.fade-in, .fade-up, .fade-left, .fade-right, .zoom-in, .reveal-image').forEach(el => {
   observer.observe(el);
 });
-
-// Loading Screen Logic
-const removeLoader = () => {
-  const loader = document.getElementById('loader');
-  if (loader) {
-    // Add fade-out class after a longer delay to show the loading animation
-    setTimeout(() => {
-      loader.classList.add('fade-out');
-
-      // Remove loader from DOM after fade-out animation completes
-      setTimeout(() => {
-        loader.remove();
-      }, 800); // Match the CSS transition duration
-    }, 1500); // Longer delay to enjoy the loading animation
-  }
-};
-
-if (document.readyState === 'complete') {
-  removeLoader();
-} else {
-  window.addEventListener('load', removeLoader);
-}
 
 // Postal Code Auto-fill Logic
 const postalInput = document.getElementById('postal-code');
