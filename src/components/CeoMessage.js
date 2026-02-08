@@ -16,7 +16,7 @@ export const CeoMessage = () => {
             </p>
             <div class="ceo-signature">
               <p class="ceo-position">代表取締役</p>
-              <p class="ceo-name">井上 博善</p>
+              <img src="/shomei.jpg" alt="井上 博善" class="ceo-signature-img" />
             </div>
           </div>
         </div>
@@ -95,6 +95,9 @@ export const CeoMessage = () => {
       .ceo-signature {
         text-align: right;
         margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
       }
 
       .ceo-position {
@@ -103,12 +106,13 @@ export const CeoMessage = () => {
         margin-bottom: 0.5rem;
       }
 
-      .ceo-name {
-        font-family: 'Yuji Syuku', serif;
-        font-size: 2.2rem; /* Increased size for the handwritten style */
-        font-weight: 500;
-        letter-spacing: 0.15em;
+      .ceo-signature-img {
+        max-width: 200px;
+        height: auto;
         margin-top: 0.5rem;
+        display: block;
+        mix-blend-mode: multiply; /* Blends the white/light parts with background */
+        filter: grayscale(100%) contrast(1.5) brightness(1.2); /* Remove color, push gray to white */
       }
 
       @media (max-width: 900px) {
