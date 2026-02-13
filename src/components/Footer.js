@@ -55,7 +55,7 @@ export const Footer = () => {
               <ul>
                 <li>〒225-0025</li>
                 <li>神奈川県横浜市青葉区鉄町1463</li>
-                <li class="tel-link"><a href="tel:0120-654-711">0120-654-711</a></li>
+                <li class="tel-link"><a href="tel:0120-654-711"><span class="footer-tel-free">通話無料</span> 0120-654-711</a></li>
                 <li class="mail-link"><a href="mailto:info@kakimotohome.com">info@kakimotohome.com</a></li>
               </ul>
             </div>
@@ -174,9 +174,28 @@ export const Footer = () => {
       
       .tel-link a {
           font-family: var(--font-primary);
-          font-size: 1.4rem; /* Slightly larger for emphasis */
+          font-size: 1.4rem;
           font-weight: 700;
           color: var(--color-text-primary);
+          display: flex;
+          align-items: center;
+          gap: 0.4rem;
+          transition: color 0.3s ease;
+      }
+
+      .tel-link a:hover {
+          color: var(--color-accent);
+          padding-left: 0;
+      }
+
+      .footer-tel-free {
+          font-size: 0.6rem;
+          font-weight: 700;
+          color: #fff;
+          background: var(--color-accent);
+          padding: 0.1rem 0.35rem;
+          border-radius: 3px;
+          letter-spacing: 0.05em;
       }
 
       .social-links {
@@ -288,6 +307,11 @@ export const Footer = () => {
         
         .footer-col {
             text-align: center;
+        }
+
+        .tel-link a {
+            justify-content: center;
+            font-size: 1.2rem;
         }
 
         .footer-bottom-content {

@@ -3,7 +3,6 @@ import { Header } from './components/Header.js';
 import { Hero, initHeroAnimation } from './components/Hero.js';
 import { About } from './components/About.js';
 import { Services } from './components/Services.js';
-import { Gallery } from './components/Gallery.js';
 import { News } from './components/News.js';
 import { Company } from './components/Company.js';
 import { Contact } from './components/Contact.js';
@@ -14,13 +13,14 @@ import { CeoMessage } from './components/CeoMessage.js';
 import { Facilities } from './components/Facilities.js';
 import { StickyFooter } from './components/StickyFooter.js';
 import { CtaSection } from './components/CtaSection.js';
+import { BeforeAfter, initBeforeAfterSliders } from './components/BeforeAfter.js';
 
 // Render App
 document.querySelector('#app').innerHTML = `
   ${Header()}
   <main>
     ${Hero()}
-    ${Gallery()}
+    ${BeforeAfter()}
     ${About()}
     ${CtaSection()}
     ${Services()}
@@ -37,6 +37,9 @@ document.querySelector('#app').innerHTML = `
 
 // Initialize Hero Animation
 setTimeout(initHeroAnimation, 100);
+
+// Initialize Before/After Sliders
+setTimeout(initBeforeAfterSliders, 200);
 
 // Mobile Menu Logic
 const menuToggle = document.querySelector('.mobile-menu-toggle');
