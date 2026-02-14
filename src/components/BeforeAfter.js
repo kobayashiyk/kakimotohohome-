@@ -2,6 +2,12 @@ export const BeforeAfter = () => {
   return `
     <section id="before-after" class="section before-after-section">
       <div class="container">
+        <div class="intro-block fade-up">
+          <h3 class="intro-title">信頼と実績の半世紀</h3>
+          <p class="intro-text">
+            当社は、昭和40年6月の創業以来、一般木造建築や鉄骨・鉄筋構造建築からプレハブ住宅の製造・建築まで、幅広い分野で事業を展開し、皆様のご要望に応えられるよう日々努力してまいりました。
+          </p>
+        </div>
         <div class="ba-section-header fade-up">
           <span class="ba-section-label">WORKS</span>
           <h2 class="ba-section-title">施工事例</h2>
@@ -119,6 +125,39 @@ export const BeforeAfter = () => {
       .before-after-section {
         padding: var(--spacing-xl) 0;
         background: linear-gradient(180deg, var(--color-bg-secondary) 0%, #f8f6f3 100%);
+      }
+
+      /* Intro Text Block */
+      .intro-block {
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto 4rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid var(--color-border);
+      }
+
+      .intro-title {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        font-weight: 500;
+        letter-spacing: 0.1em;
+        color: var(--color-text-primary);
+      }
+
+      .intro-text {
+        line-height: 2.2;
+        color: var(--color-text-secondary);
+        text-align: justify;
+      }
+      
+      @media (max-width: 768px) {
+        .intro-title {
+            font-size: 1.3rem;
+        }
+        
+        .intro-text {
+            text-align: left;
+        }
       }
 
       .ba-section-header {

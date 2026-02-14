@@ -13,6 +13,9 @@ export const Footer = () => {
               お客様の理想の住まいづくりを<br>
               サポートしてまいりました。
             </p>
+            <div class="footer-award">
+              <img src="/award_cs_2024.gif" alt="ホームプロ 顧客満足優良会社 2024" width="200" height="auto" loading="lazy">
+            </div>
             <div class="social-links">
               <a href="#" aria-label="Instagram">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -21,7 +24,7 @@ export const Footer = () => {
                   <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                 </svg>
               </a>
-              <a href="#" aria-label="Facebook">
+              <a href="https://www.facebook.com/profile.php?id=100063448640002" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
                 </svg>
@@ -117,6 +120,16 @@ export const Footer = () => {
         line-height: 2;
         color: var(--color-text-secondary);
         margin-bottom: 2rem;
+      }
+
+      .footer-award {
+        margin-bottom: 2rem;
+      }
+
+      .footer-award img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 4px;
       }
 
       .footer-nav-wrapper {
