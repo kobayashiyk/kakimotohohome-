@@ -9,7 +9,7 @@ export const Services = () => {
           <!-- Reform & Rebuilding -->
           <div class="service-card fade-up">
             <div class="service-image-wrapper">
-              <img src="/service-reform.jpg" alt="建て替え・リフォーム" />
+              <img src="/設楽邸/設楽様邸リビング.jpg" alt="建て替え・リフォーム" />
             </div>
             <div class="service-content">
               <h3 class="service-title">建て替え・リフォーム</h3>
@@ -30,7 +30,7 @@ export const Services = () => {
           <!-- Light Gauge Steel -->
           <div class="service-card fade-up delay-200">
             <div class="service-image-wrapper">
-              <img src="/service-steel.jpg" alt="軽量鉄骨建築" />
+              <img src="/軽量鉄骨/軽量鉄骨.jpg" alt="軽量鉄骨建築" />
             </div>
             <div class="service-content">
               <h3 class="service-title">軽量鉄骨建築</h3>

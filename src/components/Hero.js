@@ -9,7 +9,7 @@ export const Hero = () => {
           </h1>
           <p class="hero-subtitle">
             横浜で創業50年。地域密着のリフォーム・注文住宅。
-            <br class="mobile-only">
+            <br>
             お客様一人ひとりのご要望に
             誠心誠意お応えします。
           </p>
