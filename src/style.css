@@ -751,6 +751,13 @@ img {
   will-change: transform;
 }
 
+@media (max-width: 768px) {
+  .hero-bg {
+    background-position: 65% center;
+    /* Focus on the carpenter */
+  }
+}
+
 @keyframes kenBurns {
   0% {
     transform: scale(1);

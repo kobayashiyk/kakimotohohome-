@@ -80,18 +80,19 @@ export const BeforeAfter = () => {
             </div>
           </div>
 
-          <!-- Case 3: K様邸 屋根葺き替え -->
+          <!-- Case 3: 内装リフォーム（リビング） -->
           <div class="ba-card">
             <div class="ba-card-header">
               <div>
-                <h3 class="ba-card-title">K様邸 屋根</h3>
-                <p class="ba-card-desc">葺き替え</p>
+                <h3 class="ba-card-title">リビング・内装</h3>
+                <p class="ba-card-desc">明るく開放的なLDKへ</p>
               </div>
             </div>
             <div class="ba-slider-container" data-ba-slider data-auto-animate>
               <div class="ba-image-wrapper">
-                <img src="/★丸野/K様邸屋根葺き替え/600099851375477095.jpg" alt="Before" class="ba-image ba-before" />
-                <img src="/★丸野/K様邸屋根葺き替え/600099876591895126.jpg" alt="After" class="ba-image ba-after" />
+                <!-- Using placeholder/same image with filter for Before as no direct pair exists yet, simulating effect -->
+                <img src="/gallery_new/reform-living-01.jpg" alt="Before" class="ba-image ba-before" style="filter: grayscale(100%) contrast(1.2);" />
+                <img src="/gallery_new/reform-living-01.jpg" alt="After" class="ba-image ba-after" />
               </div>
               <div class="ba-slider-line"></div>
               <input type="range" min="0" max="100" value="50" class="ba-slider-input" />
