@@ -1,12 +1,12 @@
 export const About = () => {
-    return `
+  return `
     <section id="philosophy" class="section philosophy">
       <div class="container">
         <!-- Section 1: 50 Years -->
         <div class="strength-row fade-up">
           <div class="strength-visual">
              <div class="image-container">
-               <img src="/about-image.png" alt="職人の手元" />
+               <img src="/about-family.jpg" alt="家づくりの相談をする家族" />
              </div>
           </div>
           <div class="strength-content">
