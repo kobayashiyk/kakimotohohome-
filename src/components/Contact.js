@@ -254,8 +254,11 @@ export const Contact = () => {
       }
       
       .map-container iframe {
-         filter: grayscale(1);
-         transition: filter 0.5s ease;
+        width: 100%;
+        height: 100%;
+        border: 0;
+        filter: grayscale(0); /* Colored by default as requested */
+        transition: filter 0.3s ease;
       }
       
       .map-container iframe:hover {
