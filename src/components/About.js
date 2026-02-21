@@ -66,8 +66,8 @@ export const About = () => {
       .strength-row {
         display: flex;
         align-items: center;
-        gap: 4rem;
-        margin-bottom: 6rem;
+        gap: 3rem;
+        margin-bottom: 4rem;
       }
       
       .strength-row:last-child {

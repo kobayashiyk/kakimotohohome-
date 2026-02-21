@@ -165,7 +165,7 @@ export const Reviews = () => {
 
       .reviews-footer {
         text-align: center;
-        margin-top: 4rem;
+        margin-top: 3rem;
       }
 
       .reviews-footer p {

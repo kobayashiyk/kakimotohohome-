@@ -37,20 +37,7 @@ export const FullGallery = () => {
                     </div>
                   </div>
                 </div>
-                <div class="gallery-item card-style">
-                  <div class="gallery-image">
-                    <img src="/gallery_new/bath-01.jpg" alt="バスルーム" loading="lazy" />
-                    <div class="category-badge">バスルーム</div>
-                  </div>
-                  <div class="gallery-card-content">
-                    <h4>癒しのバスルーム</h4>
-                    <p>一日の疲れを癒やす、ゆったりとしたくつろぎの空間へ。</p>
-                    <div class="gallery-tags">
-                        <span>#浴室</span>
-                        <span>#バリアフリー</span>
-                    </div>
-                  </div>
-                </div>
+
                 <div class="gallery-item card-style">
                   <div class="gallery-image">
                     <img src="/gallery_new/exterior-01.jpg" alt="外構工事" loading="lazy" />
@@ -107,6 +94,92 @@ export const FullGallery = () => {
                     </div>
                   </div>
                 </div>
+
+                <!-- 新規施工事例 -->
+                <div class="gallery-item card-style">
+                  <div class="gallery-image">
+                    <img src="/ribinngu/B様邸　和室　後.jpg" alt="B様邸 和室" loading="lazy" />
+                    <div class="category-badge">和室</div>
+                  </div>
+                  <div class="gallery-card-content">
+                    <h4>B様邸 和室</h4>
+                    <p>伝統的な和の趣を大切にしたリフォーム。</p>
+                    <div class="gallery-tags">
+                        <span>#和室</span>
+                        <span>#リフォーム</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="gallery-item card-style">
+                  <div class="gallery-image">
+                    <img src="/施工事例/S様邸　浴室　後.jpg" alt="S様邸 浴室" loading="lazy" />
+                    <div class="category-badge">浴室</div>
+                  </div>
+                  <div class="gallery-card-content">
+                    <h4>S様邸 浴室</h4>
+                    <p>清潔感あふれるモダンな浴室へリフォーム。</p>
+                    <div class="gallery-tags">
+                        <span>#浴室</span>
+                        <span>#リフォーム</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="gallery-item card-style">
+                  <div class="gallery-image">
+                    <img src="/施工事例/I様邸　洗面台　後.jpg" alt="I様邸 洗面台" loading="lazy" />
+                    <div class="category-badge">洗面台</div>
+                  </div>
+                  <div class="gallery-card-content">
+                    <h4>I様邸 洗面台</h4>
+                    <p>使いやすさにこだわった洗面台のリフォーム。</p>
+                    <div class="gallery-tags">
+                        <span>#洗面台</span>
+                        <span>#水回り</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="gallery-item card-style">
+                  <div class="gallery-image">
+                    <img src="/施工事例/_DSC1496.jpg" alt="お風呂" loading="lazy" />
+                    <div class="category-badge">浴室</div>
+                  </div>
+                  <div class="gallery-card-content">
+                    <h4>お風呂リフォーム</h4>
+                    <p>快適なバスタイムを実現する浴室改装。</p>
+                    <div class="gallery-tags">
+                        <span>#お風呂</span>
+                        <span>#リフォーム</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="gallery-item card-style">
+                  <div class="gallery-image">
+                    <img src="/施工事例/キッチン-pixta_4124418_M.jpg" alt="キッチン" loading="lazy" />
+                    <div class="category-badge">キッチン</div>
+                  </div>
+                  <div class="gallery-card-content">
+                    <h4>キッチンリフォーム</h4>
+                    <p>機能性とデザイン性を兼ね備えたキッチン。</p>
+                    <div class="gallery-tags">
+                        <span>#キッチン</span>
+                        <span>#リフォーム</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="gallery-item card-style">
+                  <div class="gallery-image">
+                    <img src="/施工事例/外壁塗装4.jpg" alt="外壁塗装" loading="lazy" />
+                    <div class="category-badge">外壁</div>
+                  </div>
+                  <div class="gallery-card-content">
+                    <h4>外壁塗装</h4>
+                    <p>建物の美観と耐久性を高める外壁塗装工事。</p>
+                    <div class="gallery-tags">
+                        <span>#外壁</span>
+                        <span>#塗装</span>
+                    </div>
+                  </div>
+                </div>
             </div>
           </div>
 
@@ -127,7 +200,20 @@ export const FullGallery = () => {
                     </div>
                   </div>
                 </div>
-                <!-- More items can be added similarly with card-style -->
+                <div class="gallery-item card-style">
+                  <div class="gallery-image">
+                    <img src="/施工事例/_DSC2331.jpg" alt="軽量鉄骨施工事例" loading="lazy" />
+                    <div class="category-badge">鉄骨建築</div>
+                  </div>
+                  <div class="gallery-card-content">
+                    <h4>軽量鉄骨施工事例</h4>
+                    <p>強度と柔軟性を備えた軽量鉄骨構造の施工例。</p>
+                    <div class="gallery-tags">
+                        <span>#軽量鉄骨</span>
+                        <span>#施工事例</span>
+                    </div>
+                  </div>
+                </div>
                 <div class="gallery-item card-style">
                   <div class="gallery-image">
                     <img src="/gallery_new/steel-02.jpg" alt="事務所倉庫" loading="lazy" />

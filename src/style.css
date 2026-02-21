@@ -34,7 +34,7 @@
   --spacing-md: 5rem;
   --spacing-lg: 8rem;
   /* Creating better vertical rhythm */
-  --spacing-xl: 12rem;
+  --spacing-xl: 8rem;
 
   /* Transitions - Slower, more deliberate */
   --transition-fast: 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
@@ -143,7 +143,7 @@ img {
     --spacing-md: 3.5rem;
     /* Section gap */
     --spacing-lg: 5rem;
-    --spacing-xl: 7rem;
+    --spacing-xl: 5rem;
   }
 
   body {
@@ -727,7 +727,7 @@ img {
 /* --- HERO SECTION STYLES (Restored) --- */
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 85vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -740,7 +740,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('/hero-new.png');
+  background-image: url('/施工事例/新築-pixta_7825206_M.jpg');
   /* Ensure this file exists, or fallback is handled */
   background-color: #333;
   /* Fallback color */
@@ -902,6 +902,10 @@ img {
 }
 
 @media (max-width: 768px) {
+  .hero {
+    min-height: 70vh;
+  }
+
   .hero-title {
     font-size: 2rem;
   }
@@ -916,6 +920,8 @@ img {
 
   .btn-hero {
     color: #ffffff !important;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
   }
 }
 

@@ -9,108 +9,85 @@ export const BeforeAfter = () => {
           </p>
         </div>
         <div class="ba-section-header fade-up">
-          <span class="ba-section-label">WORKS</span>
           <h2 class="ba-section-title">施工事例</h2>
           <div class="ba-section-line"></div>
-          <p class="ba-section-desc">スライダーを動かして、施工前後の変化をお確かめください</p>
+          <p class="ba-section-desc">施工前後の変化をご覧ください</p>
         </div>
         
-        <div class="ba-cards-wrapper fade-up delay-200">
-          <!-- Case 1: N様邸 エクステリア - 複数画像対応 -->
-          <div class="ba-card ba-card-featured">
-            <div class="ba-card-header">
-              <div>
-                <h3 class="ba-card-title">N様邸 エクステリア</h3>
-                <p class="ba-card-desc">LIXIL暖蘭物語</p>
-              </div>
-              <div class="ba-gallery-nav" data-gallery-nav="n-exterior">
-                <button class="ba-nav-btn ba-nav-prev" data-nav="prev">‹</button>
-                <span class="ba-nav-counter"><span data-current>1</span> / <span data-total>3</span></span>
-                <button class="ba-nav-btn ba-nav-next" data-nav="next">›</button>
-              </div>
+        <div class="ba-cases-wrapper fade-up delay-200">
+
+          <!-- Case 1: B様邸 和室 -->
+          <div class="ba-case">
+            <div class="ba-case-header">
+              <h3 class="ba-case-title">B様邸 和室リフォーム</h3>
             </div>
-            <div class="ba-slider-container" data-ba-slider data-gallery="n-exterior" data-auto-animate>
-              <div class="ba-image-wrapper" data-gallery-images>
-                <!-- Image Set 1 -->
-                <div class="ba-image-set active" data-set="0">
-                  <img src="/★丸野/N様邸エクステリア_LIXIL暖蘭物語/ビフォー/IMG_1887.JPG" alt="Before" class="ba-image ba-before" />
-                  <img src="/★丸野/N様邸エクステリア_LIXIL暖蘭物語/アフター/_DSC1862.JPG" alt="After" class="ba-image ba-after" />
-                </div>
-                <!-- Image Set 2 -->
-                <div class="ba-image-set" data-set="1">
-                  <img src="/★丸野/N様邸エクステリア_LIXIL暖蘭物語/ビフォー/IMG_1888.JPG" alt="Before" class="ba-image ba-before" />
-                  <img src="/★丸野/N様邸エクステリア_LIXIL暖蘭物語/アフター/_DSC1865.JPG" alt="After" class="ba-image ba-after" />
-                </div>
-                <!-- Image Set 3 -->
-                <div class="ba-image-set" data-set="2">
-                  <img src="/★丸野/N様邸エクステリア_LIXIL暖蘭物語/ビフォー/IMG_1890.JPG" alt="Before" class="ba-image ba-before" />
-                  <img src="/★丸野/N様邸エクステリア_LIXIL暖蘭物語/アフター/_DSC1870.JPG" alt="After" class="ba-image ba-after" />
+            <div class="ba-pair">
+              <div class="ba-side">
+                <div class="ba-side-label ba-side-label--before">Before</div>
+                <div class="ba-side-img">
+                  <img src="/ribinngu/B様邸　和室　前.jpg" alt="B様邸 和室 施工前" loading="lazy" />
                 </div>
               </div>
-              <div class="ba-slider-line"></div>
-              <input type="range" min="0" max="100" value="50" class="ba-slider-input" />
-              <div class="ba-labels">
-                <span class="ba-label ba-label-before">Before</span>
-                <span class="ba-label ba-label-after">After</span>
+              <div class="ba-arrow-divider">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
               </div>
-              <div class="ba-auto-indicator">
-                <span class="ba-auto-dot"></span>
-                自動プレビュー中
+              <div class="ba-side">
+                <div class="ba-side-label ba-side-label--after">After</div>
+                <div class="ba-side-img">
+                  <img src="/ribinngu/B様邸　和室　後.jpg" alt="B様邸 和室 施工後" loading="lazy" />
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Case 2: H様邸 屋根カバー工法 -->
-          <div class="ba-card">
-            <div class="ba-card-header">
-              <div>
-                <h3 class="ba-card-title">H様邸 屋根</h3>
-                <p class="ba-card-desc">カバー工法</p>
-              </div>
+          <!-- Case 2: S様邸 浴室 -->
+          <div class="ba-case">
+            <div class="ba-case-header">
+              <h3 class="ba-case-title">S様邸 浴室リフォーム</h3>
             </div>
-            <div class="ba-slider-container" data-ba-slider data-auto-animate>
-              <div class="ba-image-wrapper">
-                <img src="/★丸野/H様邸屋根_カバー工法/600099505697718292.jpg" alt="Before" class="ba-image ba-before" />
-                <img src="/★丸野/H様邸屋根_カバー工法/600099522172944526.jpg" alt="After" class="ba-image ba-after" />
+            <div class="ba-pair">
+              <div class="ba-side">
+                <div class="ba-side-label ba-side-label--before">Before</div>
+                <div class="ba-side-img">
+                  <img src="/施工事例/S様邸　浴室　前.jpg" alt="S様邸 浴室 施工前" loading="lazy" />
+                </div>
               </div>
-              <div class="ba-slider-line"></div>
-              <input type="range" min="0" max="100" value="50" class="ba-slider-input" />
-              <div class="ba-labels">
-                <span class="ba-label ba-label-before">Before</span>
-                <span class="ba-label ba-label-after">After</span>
+              <div class="ba-arrow-divider">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
               </div>
-              <div class="ba-auto-indicator">
-                <span class="ba-auto-dot"></span>
-                自動プレビュー中
+              <div class="ba-side">
+                <div class="ba-side-label ba-side-label--after">After</div>
+                <div class="ba-side-img">
+                  <img src="/施工事例/S様邸　浴室　後.jpg" alt="S様邸 浴室 施工後" loading="lazy" />
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Case 3: B様邸 和室 -->
-          <div class="ba-card">
-            <div class="ba-card-header">
-              <div>
-                <h3 class="ba-card-title">B様邸 和室</h3>
-                <p class="ba-card-desc">和室リフォーム</p>
-              </div>
+          <!-- Case 3: H様邸 屋根カバー工法 -->
+          <div class="ba-case">
+            <div class="ba-case-header">
+              <h3 class="ba-case-title">H様邸 屋根カバー工法</h3>
             </div>
-            <div class="ba-slider-container" data-ba-slider data-auto-animate>
-              <div class="ba-image-wrapper">
-                <img src="/ribinngu/B様邸　和室　前.jpg" alt="Before" class="ba-image ba-before" />
-                <img src="/ribinngu/B様邸　和室　後.jpg" alt="After" class="ba-image ba-after" />
+            <div class="ba-pair">
+              <div class="ba-side">
+                <div class="ba-side-label ba-side-label--before">Before</div>
+                <div class="ba-side-img">
+                  <img src="/★丸野/H様邸屋根_カバー工法/600099505697718292.jpg" alt="H様邸 屋根 施工前" loading="lazy" />
+                </div>
               </div>
-              <div class="ba-slider-line"></div>
-              <input type="range" min="0" max="100" value="50" class="ba-slider-input" />
-              <div class="ba-labels">
-                <span class="ba-label ba-label-before">Before</span>
-                <span class="ba-label ba-label-after">After</span>
+              <div class="ba-arrow-divider">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
               </div>
-              <div class="ba-auto-indicator">
-                <span class="ba-auto-dot"></span>
-                自動プレビュー中
+              <div class="ba-side">
+                <div class="ba-side-label ba-side-label--after">After</div>
+                <div class="ba-side-img">
+                  <img src="/★丸野/H様邸屋根_カバー工法/600099522172944526.jpg" alt="H様邸 屋根 施工後" loading="lazy" />
+                </div>
               </div>
             </div>
           </div>
+
         </div>
 
         <div class="ba-more-wrapper fade-up delay-300">
@@ -130,8 +107,8 @@ export const BeforeAfter = () => {
       .intro-block {
         text-align: center;
         max-width: 800px;
-        margin: 0 auto 4rem;
-        padding-bottom: 2rem;
+        margin: 0 auto 3rem;
+        padding-bottom: 1.5rem;
         border-bottom: 1px solid var(--color-border);
       }
 
@@ -161,16 +138,7 @@ export const BeforeAfter = () => {
 
       .ba-section-header {
         text-align: center;
-        margin-bottom: 4rem;
-      }
-
-      .ba-section-label {
-        display: inline-block;
-        font-size: 0.85rem;
-        font-weight: 600;
-        letter-spacing: 0.3em;
-        color: var(--color-primary);
-        margin-bottom: 1rem;
+        margin-bottom: 3rem;
       }
 
       .ba-section-title {
@@ -196,260 +164,130 @@ export const BeforeAfter = () => {
         margin: 0;
       }
 
-      .ba-cards-wrapper {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2.5rem;
+      /* ===== Side-by-Side Layout ===== */
+      .ba-cases-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
       }
 
-      .ba-card {
+      .ba-case {
         background: var(--color-bg-white);
         border-radius: 12px;
         overflow: hidden;
-        box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+        box-shadow: 0 4px 24px rgba(0,0,0,0.06);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
       }
 
-      .ba-card:hover {
+      .ba-case:hover {
         transform: translateY(-4px);
-        box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+        box-shadow: 0 12px 40px rgba(0,0,0,0.1);
       }
 
-      .ba-card-featured {
-        grid-column: span 2;
+      .ba-case-header {
+        padding: 1.5rem 2rem;
+        border-bottom: 1px solid var(--color-border);
       }
 
-      .ba-card-featured .ba-slider-container {
-        aspect-ratio: 16 / 9;
-      }
-
-      .ba-card-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        padding: 1.5rem 1.5rem 1rem;
-      }
-
-      .ba-card-title {
+      .ba-case-title {
         font-size: 1.2rem;
         font-weight: 600;
-        margin: 0 0 0.25rem 0;
-      }
-
-      .ba-card-desc {
-        font-size: 0.9rem;
-        color: var(--color-text-secondary);
+        letter-spacing: 0.05em;
         margin: 0;
       }
 
-      /* Gallery Navigation */
-      .ba-gallery-nav {
+      .ba-pair {
         display: flex;
         align-items: center;
-        gap: 0.5rem;
+        position: relative;
       }
 
-      .ba-nav-btn {
-        width: 32px;
-        height: 32px;
-        border: 1px solid #ddd;
-        background: white;
-        border-radius: 50%;
-        cursor: pointer;
-        font-size: 1.2rem;
-        line-height: 1;
-        transition: all 0.2s ease;
+      .ba-side {
+        flex: 1;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .ba-side-label {
+        position: absolute;
+        top: 1rem;
+        z-index: 2;
+        padding: 0.4rem 1.2rem;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+      }
+
+      .ba-side-label--before {
+        left: 1rem;
+        background: linear-gradient(135deg, #555 0%, #333 100%);
+        color: white;
+      }
+
+      .ba-side-label--after {
+        left: 1rem;
+        background: linear-gradient(135deg, var(--color-accent) 0%, #c4956a 100%);
+        color: white;
+      }
+
+      .ba-side-img {
+        width: 100%;
+        overflow: hidden;
+      }
+
+      .ba-side-img img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.5s ease;
+      }
+
+      .ba-side:hover .ba-side-img img {
+        transform: scale(1.03);
+      }
+
+      /* Arrow divider between Before/After */
+      .ba-arrow-divider {
         display: flex;
         align-items: center;
         justify-content: center;
-      }
-
-      .ba-nav-btn:hover {
-        background: var(--color-primary);
-        color: white;
-        border-color: var(--color-primary);
-      }
-
-      .ba-nav-counter {
-        font-size: 0.85rem;
-        color: var(--color-text-secondary);
-        min-width: 40px;
-        text-align: center;
-      }
-
-      .ba-slider-container {
-        position: relative;
-        width: 100%;
-        aspect-ratio: 4 / 3;
-        overflow: hidden;
-        cursor: ew-resize;
-      }
-
-      .ba-image-wrapper {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-      }
-
-      /* Gallery Image Sets */
-      .ba-image-set {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0;
-        transition: opacity 0.5s ease;
-        pointer-events: none;
-      }
-
-      .ba-image-set.active {
-        opacity: 1;
-        pointer-events: auto;
-      }
-
-      .ba-image {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-
-      .ba-before {
+        width: 56px;
+        flex-shrink: 0;
+        background: var(--color-bg-white);
+        color: var(--color-accent);
         z-index: 1;
-        clip-path: inset(0 50% 0 0);
-        transition: clip-path 0.05s ease-out;
+        position: relative;
       }
 
-      .ba-after {
-        z-index: 0;
-      }
-
-      .ba-slider-line {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        width: 4px;
-        height: 100%;
-        background: linear-gradient(180deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0.9) 100%);
-        transform: translateX(-50%);
-        z-index: 2;
-        pointer-events: none;
-        box-shadow: 0 0 15px rgba(0,0,0,0.3);
-        transition: left 0.05s ease-out;
-      }
-
-      .ba-slider-line::before {
+      .ba-arrow-divider::before {
         content: '';
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 48px;
-        height: 48px;
-        background: white;
-        border-radius: 50%;
-        box-shadow: 0 4px 16px rgba(0,0,0,0.25);
-      }
-
-      .ba-slider-line::after {
-        content: '◄ ►';
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 14px;
-        color: var(--color-primary);
-        white-space: nowrap;
-        z-index: 3;
-        font-weight: bold;
-        letter-spacing: 2px;
-      }
-
-      .ba-slider-input {
-        position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 1px;
         height: 100%;
-        opacity: 0;
-        cursor: ew-resize;
-        z-index: 3;
+        background: var(--color-border);
       }
 
-      .ba-labels {
+      .ba-arrow-divider::after {
+        content: '';
         position: absolute;
-        bottom: 1rem;
-        left: 0;
+        top: 0;
         right: 0;
-        display: flex;
-        justify-content: space-between;
-        padding: 0 1rem;
-        pointer-events: none;
-        z-index: 2;
+        width: 1px;
+        height: 100%;
+        background: var(--color-border);
       }
 
-      .ba-label {
-        padding: 0.4rem 1rem;
-        border-radius: 20px;
-        font-size: 0.8rem;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 1px;
+      .ba-arrow-divider svg {
+        animation: ba-arrow-pulse 2s ease-in-out infinite;
       }
 
-      .ba-label-before {
-        background: linear-gradient(135deg, #666 0%, #444 100%);
-        color: white;
-      }
-
-      .ba-label-after {
-        background: linear-gradient(135deg, var(--color-primary) 0%, #c4956a 100%);
-        color: white;
-      }
-
-      /* Auto-animation indicator */
-      .ba-auto-indicator {
-        position: absolute;
-        top: 1rem;
-        right: 1rem;
-        background: rgba(0,0,0,0.7);
-        color: white;
-        padding: 0.4rem 0.8rem;
-        border-radius: 20px;
-        font-size: 0.75rem;
-        display: flex;
-        align-items: center;
-        gap: 0.4rem;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-        z-index: 4;
-      }
-
-      .ba-slider-container.animating .ba-auto-indicator {
-        opacity: 1;
-      }
-
-      .ba-auto-dot {
-        width: 8px;
-        height: 8px;
-        background: #4ade80;
-        border-radius: 50%;
-        animation: ba-pulse 1s ease-in-out infinite;
-      }
-
-      @keyframes ba-pulse {
-        0%, 100% { opacity: 1; transform: scale(1); }
-        50% { opacity: 0.5; transform: scale(0.8); }
-      }
-
-      /* Hover effect - pause auto animation */
-      .ba-slider-container:hover .ba-auto-indicator {
-        opacity: 0;
+      @keyframes ba-arrow-pulse {
+        0%, 100% { transform: translateX(0); opacity: 1; }
+        50% { transform: translateX(4px); opacity: 0.6; }
       }
 
       /* More Button Styles */
@@ -475,28 +313,45 @@ export const BeforeAfter = () => {
         color: white;
       }
 
-      @media (max-width: 900px) {
-        .ba-cards-wrapper {
-          grid-template-columns: 1fr;
-          gap: 2rem;
-        }
-
-        .ba-card-featured {
-          grid-column: span 1;
-        }
-
-        .ba-card-featured .ba-slider-container {
-          aspect-ratio: 4 / 3;
-        }
-
-        .ba-card-header {
+      /* --- Mobile --- */
+      @media (max-width: 768px) {
+        .ba-pair {
           flex-direction: column;
-          gap: 0.75rem;
         }
 
-        .ba-gallery-nav {
+        .ba-arrow-divider {
           width: 100%;
-          justify-content: flex-start;
+          height: 44px;
+          flex-direction: row;
+        }
+
+        .ba-arrow-divider::before {
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 1px;
+        }
+
+        .ba-arrow-divider::after {
+          top: auto;
+          bottom: 0;
+          right: 0;
+          width: 100%;
+          height: 1px;
+        }
+
+        .ba-arrow-divider svg {
+          transform: rotate(90deg);
+          animation: ba-arrow-pulse-mobile 2s ease-in-out infinite;
+        }
+
+        @keyframes ba-arrow-pulse-mobile {
+          0%, 100% { transform: rotate(90deg) translateX(0); opacity: 1; }
+          50% { transform: rotate(90deg) translateX(4px); opacity: 0.6; }
+        }
+
+        .ba-case-header {
+          padding: 1.2rem 1.5rem;
         }
 
         .ba-more-btn {
@@ -509,147 +364,5 @@ export const BeforeAfter = () => {
 };
 
 export const initBeforeAfterSliders = () => {
-  const sliders = document.querySelectorAll('[data-ba-slider]');
-
-  sliders.forEach(container => {
-    const input = container.querySelector('.ba-slider-input');
-    const sliderLine = container.querySelector('.ba-slider-line');
-    const hasAutoAnimate = container.hasAttribute('data-auto-animate');
-    const galleryId = container.getAttribute('data-gallery');
-
-    // Get active before image (for galleries or single images)
-    const getActiveBeforeImg = () => {
-      const activeSet = container.querySelector('.ba-image-set.active');
-      if (activeSet) {
-        return activeSet.querySelector('.ba-before');
-      }
-      return container.querySelector('.ba-before');
-    };
-
-    // Update slider position
-    const updateSlider = (value) => {
-      const beforeImg = getActiveBeforeImg();
-      if (beforeImg && sliderLine) {
-        beforeImg.style.clipPath = 'inset(0 ' + (100 - value) + '% 0 0)';
-        sliderLine.style.left = value + '%';
-        if (input) input.value = value;
-      }
-    };
-
-    // Manual slider control
-    if (input) {
-      input.addEventListener('input', (e) => {
-        stopAutoAnimation();
-        updateSlider(e.target.value);
-      });
-    }
-
-    // Auto-animation logic
-    let autoAnimationId = null;
-    let isAnimating = false;
-
-    const startAutoAnimation = () => {
-      if (isAnimating || !hasAutoAnimate) return;
-      isAnimating = true;
-      container.classList.add('animating');
-
-      let value = 20;
-      let direction = 1;
-      const speed = 0.5;
-
-      const animate = () => {
-        value += speed * direction;
-
-        if (value >= 80) {
-          direction = -1;
-        } else if (value <= 20) {
-          direction = 1;
-        }
-
-        updateSlider(value);
-        autoAnimationId = requestAnimationFrame(animate);
-      };
-
-      autoAnimationId = requestAnimationFrame(animate);
-    };
-
-    const stopAutoAnimation = () => {
-      if (autoAnimationId) {
-        cancelAnimationFrame(autoAnimationId);
-        autoAnimationId = null;
-      }
-      isAnimating = false;
-      container.classList.remove('animating');
-    };
-
-    // Intersection Observer for auto-animation
-    if (hasAutoAnimate) {
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting && entry.intersectionRatio > 0.5) {
-            startAutoAnimation();
-          } else {
-            stopAutoAnimation();
-          }
-        });
-      }, { threshold: [0.5] });
-
-      observer.observe(container);
-
-      // Pause on hover/interaction
-      container.addEventListener('mouseenter', stopAutoAnimation);
-      container.addEventListener('touchstart', stopAutoAnimation);
-      container.addEventListener('mouseleave', () => {
-        // Resume after a delay
-        setTimeout(() => {
-          const rect = container.getBoundingClientRect();
-          const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
-          if (isVisible) {
-            startAutoAnimation();
-          }
-        }, 2000);
-      });
-    }
-
-    // Gallery navigation
-    if (galleryId) {
-      const navContainer = document.querySelector(`[data-gallery-nav="${galleryId}"]`);
-      if (navContainer) {
-        const prevBtn = navContainer.querySelector('[data-nav="prev"]');
-        const nextBtn = navContainer.querySelector('[data-nav="next"]');
-        const currentSpan = navContainer.querySelector('[data-current]');
-        const totalSpan = navContainer.querySelector('[data-total]');
-        const imageSets = container.querySelectorAll('.ba-image-set');
-        const total = imageSets.length;
-        let currentIndex = 0;
-
-        if (totalSpan) totalSpan.textContent = total;
-
-        const showSet = (index) => {
-          imageSets.forEach((set, i) => {
-            set.classList.toggle('active', i === index);
-          });
-          currentIndex = index;
-          if (currentSpan) currentSpan.textContent = index + 1;
-
-          // Reset slider position for new set
-          updateSlider(50);
-        };
-
-        if (prevBtn) {
-          prevBtn.addEventListener('click', () => {
-            const newIndex = (currentIndex - 1 + total) % total;
-            showSet(newIndex);
-          });
-        }
-
-        if (nextBtn) {
-          nextBtn.addEventListener('click', () => {
-            const newIndex = (currentIndex + 1) % total;
-            showSet(newIndex);
-          });
-        }
-      }
-    }
-  });
+  // No slider initialization needed for side-by-side layout
 };

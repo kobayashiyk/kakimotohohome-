@@ -14,12 +14,14 @@ import { Facilities } from './components/Facilities.js';
 import { StickyFooter } from './components/StickyFooter.js';
 import { CtaSection } from './components/CtaSection.js';
 import { BeforeAfter, initBeforeAfterSliders } from './components/BeforeAfter.js';
+import { AwardBanner } from './components/AwardBanner.js';
 
 // Render App
 document.querySelector('#app').innerHTML = `
   ${Header()}
   <main>
     ${Hero()}
+    ${AwardBanner()}
     ${BeforeAfter()}
     ${About()}
     ${CtaSection()}
