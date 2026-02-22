@@ -159,7 +159,7 @@ export const About = () => {
         .strength-row {
           flex-direction: column;
           gap: 2rem;
-          margin-bottom: 5rem;
+          margin-bottom: 3.5rem;
         }
         
         .strength-row.reverse {
@@ -167,7 +167,7 @@ export const About = () => {
         }
         
         .image-container {
-            height: 300px;
+          height: 250px;
         }
         
         .strength-content, 
@@ -176,9 +176,24 @@ export const About = () => {
         }
         
         .strength-title {
-            width: 100%; /* Border underlines full width on mobile optional */
-             font-size: 1.5rem;
-             margin-bottom: 1.5rem;
+          width: 100%;
+          font-size: 1.4rem;
+          margin-bottom: 1.2rem;
+          padding-bottom: 0.8rem;
+        }
+
+        .strength-text p {
+          font-size: 0.95rem;
+          margin-bottom: 1rem;
+          text-align: left;
+        }
+
+        .homepro-link {
+          width: 100%;
+          justify-content: center;
+          padding: 0.9rem 1.5rem;
+          font-size: 0.95rem;
+          box-sizing: border-box;
         }
       }
     </style>

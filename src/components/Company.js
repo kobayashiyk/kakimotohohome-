@@ -72,6 +72,11 @@ export const Company = () => {
               </dd>
             </div>
           </dl>
+          <div class="navi-note">
+            <p>※カーナビをご利用の方は、<br>
+            「<strong>鉄町1465-1（旧住所）</strong>」 と入力してください。<br>
+            現住所「鉄町1463」では正しく案内されない場合がございます。</p>
+          </div>
         </div>
       </div>
     </section>
@@ -169,6 +174,25 @@ export const Company = () => {
 
       .overview-item dd {
         color: var(--color-text-secondary);
+      }
+
+      .navi-note {
+        margin-top: 2rem;
+        padding: 1.2rem 1.5rem;
+        background: rgba(216, 141, 45, 0.06);
+        border-left: 3px solid var(--color-accent);
+        border-radius: 0 8px 8px 0;
+      }
+
+      .navi-note p {
+        font-size: 0.9rem;
+        line-height: 1.9;
+        color: var(--color-text-secondary);
+        margin: 0;
+      }
+
+      .navi-note strong {
+        color: var(--color-text-primary);
       }
 
       @media (max-width: 768px) {

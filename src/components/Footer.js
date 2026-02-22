@@ -14,7 +14,7 @@ export const Footer = () => {
               サポートしてまいりました。
             </p>
             <div class="footer-award">
-              <img src="/award_cs_2024.gif" alt="ホームプロ 顧客満足優良会社 2024" width="200" height="auto" loading="lazy">
+              <img src="https://www.homepro.jp/popup/image/award/cs_small2024.gif" alt="ホームプロ 顧客満足優良会社 2024" width="160" height="58" loading="lazy">
             </div>
             <div class="social-links">
               <a href="#" aria-label="Instagram">

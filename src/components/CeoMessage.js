@@ -122,23 +122,29 @@ export const CeoMessage = () => {
         }
 
         .ceo-image-container {
-          height: 300px; /* Adjust height for mobile */
+          height: 280px;
           order: 1;
         }
         
         .ceo-text-content {
           order: 2;
-          padding: 0 1rem;
+          padding: 0;
         }
         
         .ceo-heading {
-          font-size: 1.3rem;
+          font-size: 1.2rem;
           margin-bottom: 1.5rem;
+          line-height: 1.6;
         }
         
         .ceo-description {
-            font-size: 0.95rem;
-            margin-bottom: 2rem;
+          font-size: 0.95rem;
+          margin-bottom: 2rem;
+          line-height: 2;
+        }
+
+        .ceo-signature-img {
+          max-width: 150px;
         }
       }
     </style>

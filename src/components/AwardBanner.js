@@ -1,16 +1,16 @@
 export const AwardBanner = () => {
-    return `
+  return `
     <section class="award-banner-section">
       <div class="container">
         <div class="award-banner-inner">
-          <div class="award-banner-badge">
-            <img src="/award_cs_2024.gif" alt="ホームプロ 顧客満足優良会社 2024" />
-          </div>
-          <div class="award-banner-text">
+          <div class="award-banner-top">
             <p class="award-banner-year">2024年度</p>
-            <h3 class="award-banner-title">顧客満足優良会社</h3>
-            <p class="award-banner-desc">ホームプロにおいて、お客様からの高い評価をいただき、顧客満足優良会社として表彰されました。</p>
+            <div class="award-banner-title-row">
+              <img src="https://www.homepro.jp/popup/image/award/cs_small2024.gif" alt="ホームプロ 顧客満足優良会社 2024" width="160" height="58" class="award-banner-badge" />
+              <h3 class="award-banner-title">顧客満足優良会社</h3>
+            </div>
           </div>
+          <p class="award-banner-desc">ホームプロにおいて、お客様からの高い評価をいただき、顧客満足優良会社として表彰されました。</p>
         </div>
       </div>
     </section>
@@ -33,9 +33,7 @@ export const AwardBanner = () => {
       }
 
       .award-banner-inner {
-        display: flex;
-        align-items: center;
-        gap: 2rem;
+        text-align: center;
         padding: 1.5rem 2.5rem;
         background: rgba(255,255,255,0.85);
         border-radius: 12px;
@@ -45,19 +43,8 @@ export const AwardBanner = () => {
         border: 1px solid rgba(216,141,45,0.15);
       }
 
-      .award-banner-badge {
-        flex-shrink: 0;
-      }
-
-      .award-banner-badge img {
-        width: 220px;
-        height: auto;
-        display: block;
-        filter: drop-shadow(0 2px 8px rgba(0,0,0,0.1));
-      }
-
-      .award-banner-text {
-        flex: 1;
+      .award-banner-top {
+        margin-bottom: 0.8rem;
       }
 
       .award-banner-year {
@@ -65,7 +52,18 @@ export const AwardBanner = () => {
         color: var(--color-accent);
         font-weight: 600;
         letter-spacing: 0.15em;
-        margin-bottom: 0.3rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .award-banner-title-row {
+        display: inline-flex;
+        align-items: center;
+        gap: 1.2rem;
+        justify-content: center;
+      }
+
+      .award-banner-badge {
+        flex-shrink: 0;
       }
 
       .award-banner-title {
@@ -73,7 +71,7 @@ export const AwardBanner = () => {
         font-weight: 700;
         letter-spacing: 0.1em;
         color: var(--color-text-primary);
-        margin-bottom: 0.5rem;
+        margin: 0;
         background: linear-gradient(135deg, #8B6914, #D4A843);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -93,15 +91,12 @@ export const AwardBanner = () => {
         }
 
         .award-banner-inner {
-          flex-direction: column;
-          text-align: center;
           padding: 1.5rem;
-          gap: 1rem;
         }
 
-        .award-banner-badge img {
-          width: 180px;
-          margin: 0 auto;
+        .award-banner-title-row {
+          flex-direction: column;
+          gap: 0.5rem;
         }
 
         .award-banner-title {

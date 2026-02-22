@@ -315,6 +315,36 @@ export const BeforeAfter = () => {
 
       /* --- Mobile --- */
       @media (max-width: 768px) {
+        .before-after-section {
+          padding: var(--spacing-md) 0;
+        }
+
+        .intro-block {
+          margin: 0 auto 2rem;
+          padding-bottom: 1rem;
+        }
+
+        .intro-title {
+          font-size: 1.2rem;
+        }
+
+        .intro-text {
+          text-align: left;
+          font-size: 0.95rem;
+        }
+
+        .ba-section-header {
+          margin-bottom: 2rem;
+        }
+
+        .ba-section-title {
+          font-size: 1.8rem;
+        }
+
+        .ba-cases-wrapper {
+          gap: 2rem;
+        }
+
         .ba-pair {
           flex-direction: column;
         }
@@ -351,12 +381,24 @@ export const BeforeAfter = () => {
         }
 
         .ba-case-header {
-          padding: 1.2rem 1.5rem;
+          padding: 1rem 1.2rem;
+        }
+
+        .ba-case-title {
+          font-size: 1.05rem;
+        }
+
+        .ba-side-label {
+          padding: 0.3rem 0.9rem;
+          font-size: 0.7rem;
         }
 
         .ba-more-btn {
-          padding: 0.875rem 2rem;
+          width: 100%;
+          padding: 1rem;
           font-size: 0.95rem;
+          text-align: center;
+          box-sizing: border-box;
         }
       }
     </style>

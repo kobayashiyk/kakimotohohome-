@@ -73,7 +73,7 @@ export const Reviews = () => {
         
         <div class="reviews-footer fade-up">
           <p>ホームプロでの評価平均 4.8/5.0 (2024年現在)</p>
-          <a href="https://www.homepro.jp/kaisha/325246/" target="_blank" rel="noopener noreferrer" class="btn-outline">ホームプロで詳細を見る</a>
+          <a href="https://www.homepro.jp/kaisha/325246/" target="_blank" rel="noopener noreferrer" style="display:inline-block;"><img src="https://www.homepro.jp/popup/image/award/cs_large2024.gif" alt="ホームプロ 顧客満足優良会社 2024" style="display:block; margin:0 auto; max-width:100%; height:auto;" /></a>
         </div>
       </div>
     </section>
@@ -195,11 +195,23 @@ export const Reviews = () => {
         }
         
         .review-card {
-            padding: 1.5rem;
+          padding: 1.5rem;
         }
         
         .review-title {
-            font-size: 1rem;
+          font-size: 1rem;
+        }
+
+        .reviews-footer {
+          margin-top: 2rem;
+        }
+
+        .reviews-footer img {
+          max-width: 280px;
+        }
+
+        .review-quote {
+          font-size: 0.9rem;
         }
       }
     </style>
