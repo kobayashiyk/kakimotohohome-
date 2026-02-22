@@ -903,7 +903,8 @@ img {
 
 @media (max-width: 768px) {
   .hero {
-    min-height: 70vh;
+    min-height: 80vh;
+    padding-top: 60px;
   }
 
   .hero-title {
