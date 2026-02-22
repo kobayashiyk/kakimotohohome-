@@ -95,6 +95,11 @@ export const Footer = () => {
         flex: 0 0 300px;
       }
 
+      .footer-award {
+        margin: 1.5rem 0;
+        text-align: center;
+      }
+
       .footer-logo-link {
         display: block;
         margin-bottom: 1.5rem;

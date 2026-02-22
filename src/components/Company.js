@@ -72,11 +72,6 @@ export const Company = () => {
               </dd>
             </div>
           </dl>
-          <div class="navi-note">
-            <p>※カーナビをご利用の方は、<br>
-            「<strong>鉄町1465-1（旧住所）</strong>」 と入力してください。<br>
-            現住所「鉄町1463」では正しく案内されない場合がございます。</p>
-          </div>
         </div>
       </div>
     </section>

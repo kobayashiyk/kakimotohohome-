@@ -8,10 +8,8 @@ export const Hero = () => {
             理想の暮らしを、<br>カタチに。
           </h1>
           <p class="hero-subtitle">
-            横浜で創業50年。地域密着のリフォーム・注文住宅。
-            <br>
-            お客様一人ひとりのご要望に
-            誠心誠意お応えします。
+            横浜で創業50年。地域密着の家づくり。<br>
+            お客様の理想に誠心誠意お応えします。
           </p>
           <div class="hero-cta-wrapper">
              <div class="cta-actions">

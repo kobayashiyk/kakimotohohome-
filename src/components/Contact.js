@@ -105,6 +105,11 @@ export const Contact = () => {
               <p><strong>柿本ホーム産業</strong></p>
               <p>〒225-0025 神奈川県横浜市青葉区鉄町1463</p>
             </div>
+            <div class="navi-note">
+              <p>※カーナビをご利用の方は、<br>
+              「<strong>鉄町1465-1（旧住所）</strong>」 と入力してください。<br>
+              現住所「鉄町1463」では正しく案内されない場合がございます。</p>
+            </div>
           </div>
         </div>
       </div>
@@ -291,6 +296,25 @@ export const Contact = () => {
           font-size: 1.1rem;
           display: block;
           margin-bottom: 0.5rem;
+      }
+
+      .navi-note {
+        margin-top: 1.5rem;
+        padding: 1.2rem 1.5rem;
+        background: rgba(216, 141, 45, 0.06);
+        border-left: 3px solid var(--color-accent);
+        border-radius: 0 8px 8px 0;
+      }
+
+      .navi-note p {
+        font-size: 0.9rem;
+        line-height: 1.9;
+        color: var(--color-text-secondary);
+        margin: 0;
+      }
+
+      .navi-note strong {
+        color: var(--color-text-primary);
       }
 
       @media (max-width: 900px) {
